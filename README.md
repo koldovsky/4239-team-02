@@ -11,3 +11,4 @@ HTML files with 'partial.html' suffix will be ignored, so validator is compatibl
 ## Members:
 1. Maria Rossa
 2. Taras Yaremko
+3. Pavlo Pylypiuk
