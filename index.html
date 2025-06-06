@@ -9,10 +9,17 @@
 </head>
 <body>
     <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
-    <main>
-        <section>
-            Blog
-        </section>
-    </main>
+    <!-- Taras Yaremko - Block 12 -->
+
+     <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.blog.partial.html"></div>
+
+
+    <!-- Iryna Zhmailo - Block 17 -->
+      
+    <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.modal-cart-widget.partial.html"></div>
+
+    <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.modal-shopping-cart.partial.html"></div>
+
+    <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.order-confirmation.partial.html"></div>
 </body>
 </html>
