@@ -18,3 +18,4 @@ HTML files with 'partial.html' suffix will be ignored, so validator is compatibl
 7. Oleksandr Ryzhkov
 8. Andriy Rudavskiy
 9. Anna Snitko
+10. Andrii Rybak
