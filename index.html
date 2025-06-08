@@ -10,13 +10,25 @@
 <body>
     <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
 
+    <!-- Anna Snitko - Block 1 -->
+    
+    <header>
+        <nav data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.nav.partial.html"></nav>
+    </header>
+    
+    <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.taste-our.partial.html"></div>
+
+    <!-- Anna Snitko - Block 4 -->
+    
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.best-deals.partial.html"></section>
+
     <!-- Ryzhkov Oleksandr - Block 5-->
 
     <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.history.partial.html"></div>
 
     <!-- Taras Yaremko - Block 12 -->
 
-     <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.blog.partial.html"></div>
+    <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.blog.partial.html"></div>
 
     <!-- Ryzhkov Oleksandr - Block 13-->
 
@@ -35,5 +47,7 @@
     <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.modal-shopping-cart.partial.html"></div>
 
     <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.order-confirmation.partial.html"></div>
+
+
 </body>
 </html>
