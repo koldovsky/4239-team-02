@@ -1,76 +1,32 @@
-<!-- partial:faq.html -->
-<div style="background-color: #261e1c; padding: 20px;" id="faq">
-    <p style="color: #c8693a;">FAQ</p>
-    <img src="img/faq/faq-grape.svg" alt="FAQ Logo" width="140" height="30" />
+<div class="faq" id="faq">
+    <p class="faq__title">FAQ</p>
+    <img class="faq__logo" src="img/faq/faq-grape.svg" alt="FAQ Logo" width="140" height="30" />
   
-    <p style="color: #ffffff;">Have a Question?</p>
-    <img src="img/faq/faq.webp" alt="FAQ" width="470" height="680" />
+    <p class="faq__subtitle">Have a Question?</p>
+    <img class="faq__image" src="img/faq/faq.webp" alt="FAQ" width="470" height="680" />
   
-    <style>
-      .accordion {
-        background-color: #261e1c;
-        color: #ffffff;
-        cursor: pointer;
-        padding: 10px;
-        width: 100%;
-        text-align: left;
-        border: none;
-        outline: none;
-        transition: 0.4s;
-        font-size: 16px;
-      }
-  
-      .accordion::after {
-        content: '\002B'; /* plus sign */
-        float: right;
-      }
-  
-      .accordion.active::after {
-        content: '\2212'; /* minus sign */
-      }
-  
-      .panel {
-        padding: 0 10px;
-        background-color: #261e1c;
-        display: none;
-        overflow: hidden;
-        color: #898082;
-      }
-    </style>
-  
-    <button class="accordion">Are you a wholesale wine supplier?</button>
-    <div class="panel">
+    <button class="faq__question">Are you a wholesale wine supplier?</button>
+    <div class="faq__answer">
       <p>Our winery produces craft wine. Bulk orders are possible, but lots cannot be large.</p>
     </div>
   
-    <button class="accordion">Do you deliver outside the US?</button>
-    <div class="panel">
+    <button class="faq__question">Do you deliver outside the US?</button>
+    <div class="faq__answer">
       <p>Yes, we ship your orders to any state and city in the United States, as well as abroad.</p>
     </div>
   
-    <button class="accordion">How many varieties are there in your winery?</button>
-    <div class="panel">
+    <button class="faq__question">How many varieties are there in your winery?</button>
+    <div class="faq__answer">
       <p>Our winery offers wine-lovers more than 10 different varieties of wines with different aging periods.</p>
     </div>
   
-    <button class="accordion">Do you advise on the choice of wine?</button>
-    <div class="panel">
+    <button class="faq__question">Do you advise on the choice of wine?</button>
+    <div class="faq__answer">
       <p>Yes. Our winery experts will tell you more about the varieties and help you choose the best option for you.</p>
     </div>
   
-    <button class="accordion">Where are your vineyards located?</button>
-    <div class="panel">
+    <button class="faq__question">Where are your vineyards located?</button>
+    <div class="faq__answer">
       <p>We are located in the Napa Valley, America's most famous wine region.</p>
     </div>
-  
-    <script>
-      const acc = document.querySelectorAll(".accordion");
-      acc.forEach((btn) => {
-        btn.addEventListener("click", function () {
-          this.classList.toggle("active");
-          const panel = this.nextElementSibling;
-          panel.style.display = panel.style.display === "block" ? "none" : "block";
-        });
-      });
-    </script>
   </div>
