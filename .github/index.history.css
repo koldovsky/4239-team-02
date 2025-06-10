@@ -1,0 +1,31 @@
+.history {
+    background-color: #261e1c;
+    padding: 20px;
+  }
+  
+  .history__image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .history__item {
+    margin-bottom: 20px;
+  }
+  
+  .history__year {
+    color: #c8693a;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+  }
+  
+  .history__title {
+    color: #ffffff;
+    margin: 0 0 10px 0;
+  }
+  
+  .history__description {
+    color: #898082;
+    margin: 0;
+  }

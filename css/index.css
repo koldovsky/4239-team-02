@@ -1,0 +1,6 @@
+/* Import css files in the order corresponding to the blocks in index.html */
+
+@import "global.css";
+@import "index.newsletter-section.css";
+@import "global.footer.css";
+@import "global.confirmation-of-age-modal.css"

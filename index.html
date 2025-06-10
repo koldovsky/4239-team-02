@@ -5,17 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href=".github/index.faq.css" />
+    <link rel="stylesheet" href=".github/index.history.css" />
     <link
       rel="shortcut icon"
       href="https://placekitten.com/96/139"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="css/index.css">
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
       crossorigin="anonymous"
     ></script>
-    <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
   </head>
   <body>
     <!-- Anna Snitko - Block 1 -->
@@ -104,7 +106,20 @@
       data-hx-get="index.faq.partial.html"
     ></div>
 
-    <!-- Andrii Rybak - Block 15 Footer  &  Block 16 Confirmation of age-->
+    <!-- Mochalnykov Yurii- Block 14 -->
+
+    <div
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="index.info-cards.partial.html"
+    ></div>
+
+    <!-- Andrii Rybak - Block 15 Footer + Newsletter section  &  Block 16 Confirmation of age-->
+    <section
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="index.newsletter-section.partial.html"
+    ></section>
 
     <footer
       data-hx-trigger="load"
@@ -137,5 +152,8 @@
       data-hx-swap="outerHTML"
       data-hx-get="index.order-confirmation.partial.html"
     ></div>
+
+    <!-- Valentyn Tymofiiv - Block 18 -->
+    <!-- global.add-to-cart.partial.html -->
   </body>
 </html>
