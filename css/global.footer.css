@@ -9,6 +9,26 @@
     color: var(--text-color-white);
 }
 
+/* Icons */
+.footer__social-links {
+    color: var(--element-color-orange);
+}
+
+.svgIcon_1J7 {
+    background-color: transparent;
+    color: var(--element-color-orange);
+}
+
+.outer_bDW {
+    fill: currentColor;
+    color: transparent;
+}
+
+.logo_2gS, .border_2yy {
+    fill: currentColor;
+}
+/* ========== */
+
 .footer__contact {
     p, a{
         font-size: 14px;
@@ -31,4 +51,5 @@
     font-size: 14px;
     color: var(--text-color-white);
 }
+
 
