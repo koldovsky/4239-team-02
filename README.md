@@ -43,3 +43,4 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 9. Anna Snitko
 10. Andrii Rybak
 11. Pankin Nikita
+12. Vladyslav Savchuk
