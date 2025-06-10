@@ -21,6 +21,7 @@
     --element-color-orange: #c8693a;
     --text-color-white: #ffffff;
     --text-color-gray: #898082;
+    --input-background-color-grey: #25211f;
     font-family: "Rubik", sans-serif;
     scroll-behavior: smooth;
 }
