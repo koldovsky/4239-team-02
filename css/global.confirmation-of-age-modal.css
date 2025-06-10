@@ -1,0 +1,27 @@
+.age-confirmation {
+    background-color: var(--background-color-brownish-burgundy);
+}
+.age-confirmation__title {
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 41px;
+    color: var(--text-color-white);
+}
+
+.age-confirmation__message {
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: var(--text-color-white);
+    
+}
+
+.age-confirmation__button {
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    color: var(--text-color-white);
+}

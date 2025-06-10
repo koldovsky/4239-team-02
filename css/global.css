@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Prata&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
+/* Imported fonts used on the site
+     Rubik - default font          font-family: "Rubik", sans-serif;
+     Prata - header font           font-family: "Prata", serif;
+     Great Vibes - stylised font   font-family: "Great Vibes", cursive;
+*/
+
 *,
 *::after,
 *::before {
@@ -9,11 +15,12 @@
 }
 
 :root {
-    --background-colour-brownish-burgundy: #261e1c;
-    --background-colour-brown: #1a1512;
-    --background-colour-light-brown: #1b1613;
-    --element-colour-orange: #c8693a;
-    --text-colour: #ffffff;
+    --background-color-brownish-burgundy: #261e1c;
+    --background-color-brown: #1a1512;
+    --background-color-light-brown: #1b1613;
+    --element-color-orange: #c8693a;
+    --text-color-white: #ffffff;
+    --text-color-gray: #898082;
     font-family: "Rubik", sans-serif;
     scroll-behavior: smooth;
 }
