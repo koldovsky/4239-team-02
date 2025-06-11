@@ -1,0 +1,14 @@
+.cart__header {
+	background-color: rgb(247, 248, 250);
+	font-size: 19px;
+}
+
+.cart__label {
+	.cart__label span {
+		color: #cc3833;
+	}
+}
+
+.cart__input {
+	background-color: rgba(38, 30, 28, 0.12);
+}
