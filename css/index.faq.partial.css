@@ -5,12 +5,17 @@
   
   .faq__title {
     color: #c8693a;
-    margin: 0 0 10px 0;
+    font-family: "Great Vibes", cursive;
+    font-size: 28px;
+    
+    
   }
   
   .faq__subtitle {
+    font-family: "Prata", serif;
+    font-size: 48px;
     color: #ffffff;
-    margin: 20px 0 10px 0;
+    
   }
   
   .faq__logo {
@@ -25,6 +30,9 @@
   
   .faq__question {
     background-color: #261e1c;
+    font-family: "Prata", serif;
+    font-size: 22px;
+    font-weight: normal;
     color: #ffffff;
     cursor: pointer;
     padding: 10px;
@@ -53,6 +61,9 @@
   }
   
   .faq__answer {
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
     padding: 0 10px 15px 10px;
     background-color: #261e1c;
     color: #898082;
