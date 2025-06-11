@@ -1,0 +1,18 @@
+@import "global.css";
+/* @import "global.nav.css" */
+@import "global.footer.css";
+
+.blog-post__date {
+    color: #261e1c;
+    font-size: 14px;
+}
+
+.blog-post__title {
+    color: #261e1c;
+    font-size: 41px;
+}
+
+.blog-post__content {
+    color: #261e1c;
+    font-size: 16px;
+}
