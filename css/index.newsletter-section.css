@@ -1,35 +1,46 @@
 .newsletter-section {
     background-color: var(--color-newsletter-background);
+
+    .newsletter-section__text {
+
+        .newsletter-section__subtitle {
+            font-family: "Great Vibes", cursive;
+            font-size: 21px;
+            color: var(--color-accent);
+        }
+        
+        .newsletter-section__title {
+            font-family: "Prata", serif;
+            font-size: 30px;
+            color: var(--color-text-primary);
+        }
+        
+        .newsletter-section__description {
+            font-size: 16px;
+            color: var(--color-text-primary);
+        }
+    }
+
+    .newsletter-section__form {
+
+        .newsletter-form {
+
+            .newsletter-form__input,
+            .newsletter-form__button {
+                font-size: 16px; 
+                color: var(--color-text-primary);
+            }
+            
+            .newsletter-form__button {
+                background-color: var(--color-accent);
+            }
+            
+            .newsletter-form__input{
+                background-color: var(--color-input-background);
+            }
+        }
+    }
 }
 
-.newsletter-section__subtitle {
-    font-family: "Great Vibes", cursive;
-    font-size: 21px;
-    color: var(--color-accent);
-}
 
-.newsletter-section__title {
-    font-family: "Prata", serif;
-    font-size: 30px;
-    color: var(--color-text-primary);
-}
-
-.newsletter-section__description {
-    font-size: 16px;
-    color: var(--color-text-primary);
-}
-
-.newsletter-form__input,
-.newsletter-form__button {
-    font-size: 16px; 
-    color: var(--color-text-primary);
-}
-
-.newsletter-form__button {
-    background-color: var(--color-accent);
-}
-
-.newsletter-form__input{
-    background-color: var(--color-input-background);
-}
 

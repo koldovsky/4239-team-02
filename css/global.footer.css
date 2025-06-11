@@ -1,55 +1,63 @@
 .footer {
     background-color: var(--color-footer-background);
     
-}
+    .footer__content {
+        
+        .footer__section-title {
+            font-family: "Prata", serif;
+            font-size: 22px;
+            color: var(--color-text-primary);
+        }
 
-.footer__section-title {
-    font-family: "Prata", serif;
-    font-size: 22px;
-    color: var(--color-text-primary);
-}
+        .footer__list-item a {
+            font-size: 16px;
+            color: var(--color-text-secondary);
+            text-decoration: none;
+        }
 
-/* Icons */
-.footer__social-links {
-    color: var(--color-accent);
-}
+        .footer__contact  {
 
-.svgIcon_1J7 {
-    background-color: transparent;
-    color: var(--color-accent);
-}
+                p, a {
+                font-size: 14px;
+                text-decoration: none;
+                color: var(--color-text-secondary);
+                }
 
-.outer_bDW {
-    fill: currentColor;
-    color: transparent;
-}
-
-.logo_2gS, .border_2yy {
-    fill: currentColor;
-}
-/* ========== */
-
-.footer__contact {
-    p, a{
+                .footer__socials {
+                    
+                    /* Icons */
+                    .footer__social-links {
+                        color: var(--color-accent);
+                    }
+                    
+                    .svgIcon_1J7 {
+                        background-color: transparent;
+                        color: var(--color-accent);
+                    }
+                    
+                    .outer_bDW {
+                        fill: currentColor;
+                        color: transparent;
+                    }
+                    
+                    .logo_2gS, .border_2yy {
+                        fill: currentColor;
+                    }
+                }  
+        }
+    }  
+    
+    .footer__bottom {
         font-size: 14px;
-        text-decoration: none;
-        color: var(--color-text-secondary);
+        color: var(--color-text-primary);
     }
-}
+}    
+
 /*
 .footer__contact-link a {
     text-decoration: none;
 }
 */
-.footer__list-item a {
-    font-size: 16px;
-    color: var(--color-text-secondary);
-    text-decoration: none;
-}
 
-.footer__bottom {
-    font-size: 14px;
-    color: var(--color-text-primary);
-}
 
 
