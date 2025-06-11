@@ -1,14 +1,15 @@
 /* Import css files in the order corresponding to the blocks in index.html */
 
 @import "global.css";
-@import "index.newsletter-section.css";
 @import "global.footer.css";
 @import "global.confirmation-of-age-modal.css";
 @import "index.blog.css";
-@import "index.wine-offers.partial.css";
+@import "index.history.partial.css";
 @import "index.discount-offer.partial.css";
 @import "index.modal-cart-widget.partial.css";
 @import "index.modal-shopping-cart.partial.css";
-@import "index.faq.partial.css";
-@import "index.history.partial.css";
+@import "index.wine-offers.partial.css";
+@import "index.faq.partial.css"; 
+@import "index.info-cards.css"; /*14 block*/
+@import "index.newsletter-section.css"; 
 @import "index.order-confirmation.partial.css";
