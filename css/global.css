@@ -39,3 +39,8 @@ img {
     color: var(--text-color-white);
     background-color: var(--element-color-orange);
 }
+
+.w-section {
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
