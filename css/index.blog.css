@@ -1,0 +1,51 @@
+.blog {
+    background-color: #261e1c;
+    color: #fff;
+}
+
+.blog__title {
+    font-family: "Great Vibes", cursive;
+    font-size: 21px;
+    font-weight: 400;
+    color: #c8693a;
+}
+
+.blog__subtitle {
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 41px;
+}
+
+.blog__description {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.blog__date {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.blog__item-title {
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+}
+
+.blog__excerpt-link {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+a {
+    color: #fff;
+    text-decoration-line: none;
+}
