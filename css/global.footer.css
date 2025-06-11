@@ -1,22 +1,22 @@
 .footer {
-    background-color: var(--background-color-light-brown);
+    background-color: var(--color-footer-background);
     
 }
 
 .footer__section-title {
     font-family: "Prata", serif;
     font-size: 22px;
-    color: var(--text-color-white);
+    color: var(--color-text-primary);
 }
 
 /* Icons */
 .footer__social-links {
-    color: var(--element-color-orange);
+    color: var(--color-accent);
 }
 
 .svgIcon_1J7 {
     background-color: transparent;
-    color: var(--element-color-orange);
+    color: var(--color-accent);
 }
 
 .outer_bDW {
@@ -33,7 +33,7 @@
     p, a{
         font-size: 14px;
         text-decoration: none;
-        color: var(--text-color-gray);
+        color: var(--color-text-secondary);
     }
 }
 /*
@@ -43,13 +43,13 @@
 */
 .footer__list-item a {
     font-size: 16px;
-    color: var(--text-color-gray);
+    color: var(--color-text-secondary);
     text-decoration: none;
 }
 
 .footer__bottom {
     font-size: 14px;
-    color: var(--text-color-white);
+    color: var(--color-text-primary);
 }
 
 

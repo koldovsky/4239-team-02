@@ -1,31 +1,31 @@
 .age-confirmation {
-    background-color: var(--background-color-brownish-burgundy);
+    background-color: var(--color-background-primary);
 }
 
 .age-confirmation__title {
     font-family: "Prata", serif;
     font-size: 41px;
-    color: var(--text-color-white);
+    color: var(--color-text-primary);
 }
 
 .age-confirmation__message {
     font-size: 16px;
-    color: var(--text-color-white);
+    color: var(--color-text-primary);
     
 }
 
 .age-confirmation__button {
     font-size: 15px;
-    color: var(--text-color-white);
+    color: var(--color-text-primary);
 }
 
 .age-confirmation__button--no {
     border-radius: 2px;
-    border-color: var(--text-color-white);
+    border-color: var(--color-text-primary);
     background-color: transparent;
 }
 
 .age-confirmation__button--yes {
     border-radius: 0;
-    background-color: var(--element-color-orange);
+    background-color: var(--color-accent);
 }

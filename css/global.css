@@ -15,14 +15,15 @@
 }
 
 :root {
-    --background-color-brownish-burgundy: #261e1c;
-    --background-color-brown: #1a1512;
-    --background-color-light-brown: #1b1613;
-    --element-color-orange: #c8693a;
-    --text-color-white: #ffffff;
-    --text-color-gray: #898082;
+    --color-background-primary: #261e1c;
+    --color-background-secondary: #241917; /* used in block 6 and possibly elsewhere */
+    --color-newsletter-background: #1a1512;
+    --color-footer-background: #1b1613;
+    --color-accent: #c8693a;
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #898082;
+    --color-input-background: #25211f;
     --font-prata: "Prata", serif;
-    --input-background-color-grey: #25211f;
     font-family: "Rubik", sans-serif;
     scroll-behavior: smooth;
 }
@@ -36,8 +37,8 @@ img {
     padding: 0.75rem 1.5rem;
     text-decoration: none;
     font-weight: bold;
-    color: var(--text-color-white);
-    background-color: var(--element-color-orange);
+    color: var(--color-text-primary);
+    background-color: var(--color-accent);
 }
 
 .w-section {

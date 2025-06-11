@@ -6,7 +6,7 @@
 
 .offer-card {
   padding: 2rem;
-  color: var(--text-color-white);
+  color: var(--color-text-primary);
   background-size: cover;
   background-position: center;
   flex: 1;
