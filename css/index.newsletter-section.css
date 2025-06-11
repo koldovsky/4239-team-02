@@ -4,34 +4,32 @@
 
 .newsletter-section__subtitle {
     font-family: "Great Vibes", cursive;
-    font-weight: 400;
-    font-style: normal;
     font-size: 21px;
     color: var(--element-color-orange);
 }
 
 .newsletter-section__title {
     font-family: "Prata", serif;
-    font-weight: 400;
-    font-style: normal;
     font-size: 30px;
     color: var(--text-color-white);
 }
 
 .newsletter-section__description {
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
     font-size: 16px;
     color: var(--text-color-white);
 }
 
+.newsletter-form__input,
 .newsletter-form__button {
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-    background-color: var(--element-color-orange);
+    font-size: 16px; 
     color: var(--text-color-white);
+}
+
+.newsletter-form__button {
+    background-color: var(--element-color-orange);
+}
+
+.newsletter-form__input{
+    background-color: var(--input-background-color-grey);
 }
 

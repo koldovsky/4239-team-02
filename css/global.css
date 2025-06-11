@@ -21,6 +21,8 @@
     --element-color-orange: #c8693a;
     --text-color-white: #ffffff;
     --text-color-gray: #898082;
+    --font-prata: "Prata", serif;
+    --input-background-color-grey: #25211f;
     font-family: "Rubik", sans-serif;
     scroll-behavior: smooth;
 }
@@ -30,3 +32,15 @@ img {
     max-width: 100%;
 }
 
+.btn {
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--text-color-white);
+    background-color: var(--element-color-orange);
+}
+
+.w-section {
+    padding-top: 110px;
+    padding-bottom: 110px;
+}

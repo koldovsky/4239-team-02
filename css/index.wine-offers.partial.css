@@ -1,0 +1,32 @@
+.wine-offers__wrapper {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.offer-card {
+  padding: 2rem;
+  color: var(--text-color-white);
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+}
+
+.offer-card--red {
+  background-image: url("../img/index/wine-offers_red-wines.jpg");
+}
+
+.offer-card--white {
+  background-image: url("../img/index/wine-offers_white-wines.jpg");
+}
+
+.offer-card__title {
+  font-family: var(--font-prata);
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.offer-card__description {
+  margin-bottom: 1rem;
+}
+

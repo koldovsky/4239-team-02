@@ -1,0 +1,26 @@
+.discount-offer {
+  padding: 3rem 2rem;
+  color: var(--text-color-white);
+  background-image: url("../img/index/bg_discount-offer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--element-color-orange);
+}
+
+.discount-offer__content {
+  max-width: 600px;
+}
+
+.discount-offer__title {
+  font-family: var(--font-prata);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.discount-offer__description {
+  margin-bottom: 1.5rem;
+}
+
+.discount-offer__button {
+  border: 2px solid var(--text-color-white);
+}

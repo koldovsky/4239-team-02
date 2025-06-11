@@ -5,43 +5,51 @@
 
 .footer__section-title {
     font-family: "Prata", serif;
-    font-weight: 400;
-    font-style: normal;
     font-size: 22px;
     color: var(--text-color-white);
 }
 
-.footer__section {
-    p {
-        font-optical-sizing: auto;
-        font-weight: 400;
-        font-style: normal;
+/* Icons */
+.footer__social-links {
+    color: var(--element-color-orange);
+}
+
+.svgIcon_1J7 {
+    background-color: transparent;
+    color: var(--element-color-orange);
+}
+
+.outer_bDW {
+    fill: currentColor;
+    color: transparent;
+}
+
+.logo_2gS, .border_2yy {
+    fill: currentColor;
+}
+/* ========== */
+
+.footer__contact {
+    p, a{
         font-size: 14px;
+        text-decoration: none;
         color: var(--text-color-gray);
     }
 }
-
-.footer__list-item {
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+/*
+.footer__contact-link a {
+    text-decoration: none;
+}
+*/
+.footer__list-item a {
     font-size: 16px;
     color: var(--text-color-gray);
-    text-decoration: none
+    text-decoration: none;
 }
 
-.footer_bottom {
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+.footer__bottom {
     font-size: 14px;
     color: var(--text-color-white);
 }
 
-.footer_bottom-credit {
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 14px;
-    color: var(--text-color-white);
-}
+
