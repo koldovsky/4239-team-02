@@ -1,8 +1,17 @@
-.info-cards{
-    background-color: #261e1c;
-    color: #898082;
-    padding: 20px;
+.info-cards {
+  background-color: #261e1c;
+  color: #898082;
+  padding: 20px;
 }
-.info-cards__icon{
-    color: #c8693a ;
+.info-cards__icon {
+  color: #c8693a;
+}
+.info-cards__title {
+  font-family: "Prata", serif;
+  color: #ffffff;
+  font-size: 22px;
+}
+.info-cards__description {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
 }
