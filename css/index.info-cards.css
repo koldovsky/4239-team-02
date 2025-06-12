@@ -1,5 +1,8 @@
 .info-cards{
     background-color: #261e1c;
-    color: #fff;
+    color: #898082;
     padding: 20px;
+}
+.info-cards__icon{
+    color: #c8693a ;
 }
