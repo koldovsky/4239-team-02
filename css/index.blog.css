@@ -1,5 +1,55 @@
 /* Taras Yaremko */
+
 .blog {
+  padding: 50px 24px 60px;
+  background-color: var(--color-background-primary);
+  color: var(--color-text-primary);
+
+  .blog__title {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--color-accent);
+    text-align: center;
+  }
+
+  .blog__subtitle {
+    font-family: var(--font-prata);
+    font-size: 34px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .blog__decor {
+    margin-top: 25px;
+  }
+
+  .blog__decor-img {
+    margin: 0 auto;
+  }
+
+  .blog__description {
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 30px;
+  }
+
+  .blog__list {
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    .blog__item {
+      display: grid;
+
+      margin: 50px 0 16px;
+      text-decoration-line: none;
+    }
+  }
+}
+
+/* .blog {
     background-color: #261e1c;
     color: #fff;
 }
@@ -49,4 +99,4 @@
 a {
     color: #fff;
     text-decoration-line: none;
-}
+} */
