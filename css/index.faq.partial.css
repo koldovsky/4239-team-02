@@ -1,20 +1,35 @@
 .faq {
-    background-color: #261e1c;
+    background-color: var(--color-background-primary);
     padding: 20px;
   }
   
   .faq__title {
-    color: #c8693a;
     font-family: "Great Vibes", cursive;
     font-size: 28px;
+    color: var(--color-accent);
     
+    
+  }
+
+  .faq__image {
+    display: block;
+    position: relative;
+    left: 1200px;
+
+  }  
+  .faq__discription {
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     
   }
   
   .faq__subtitle {
-    font-family: "Prata", serif;
+    --font-prata: "Prata", serif;
     font-size: 48px;
-    color: #ffffff;
+    color: var(--color-text-primary);
     
   }
   
@@ -29,11 +44,11 @@
   }
   
   .faq__question {
-    background-color: #261e1c;
-    font-family: "Prata", serif;
+    --font-prata: "Prata", serif;
     font-size: 22px;
     font-weight: normal;
-    color: #ffffff;
+    background-color: var(--color-background-primary);
+    color: var(--color-text-primary);
     cursor: pointer;
     padding: 10px;
     width: 100%;
@@ -65,8 +80,8 @@
     font-size: 16px;
     font-weight: normal;
     padding: 0 10px 15px 10px;
-    background-color: #261e1c;
-    color: #898082;
+    background-color: var(--color-background-primary);
+    color: var(--color-text-secondary);
     display: none;
     overflow: hidden;
     margin-bottom: 10px;

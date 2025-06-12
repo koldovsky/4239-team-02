@@ -1,5 +1,5 @@
 .history {
-    background-color: #261e1c;
+    background-color: var(--color-background-primary);
     padding: 20px;
   }
   
@@ -10,9 +10,19 @@
     margin-bottom: 20px;
   }
   
+  .history__timeline {
+    position: relative;
+    padding-left: 20px;
+    border-left: 2px solid var(--color-accent);
+    display: grid;
+    grid-template-rows: row;
+    grid-gap: (4 * 1px);
+  }     
+
   .history__item {
-    background-color: #261e1c;
+    background-color: var(--color-background-primary);
     margin-bottom: 20px;
+   
   }
   
   .history__year {
@@ -20,23 +30,22 @@
     font-weight: normal;
     font-style: italic;
     font-size: 14px;
-    color: #c8693a;
+    color: var(--color-accent);
     
   }
   
   .history__title {
-    font-family: "Prata", serif, cursive;
+    --font-prata: "Prata", serif, cursive;
     font-weight: normal;
     font-size: 22px;
-    color: #ffffff;
-    
-    
+    color: var(--color-text-primary);
+        
   }
   
   .history__description {
     font-family: "Rubik", sans-serif;
     font-weight: normal;
     font-size: 16px;
-    color: #898082;
+    color: var(--color-text-secondary);
     margin: 0;
   }
