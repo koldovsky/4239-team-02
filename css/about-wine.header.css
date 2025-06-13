@@ -1,0 +1,10 @@
+.about-wine__header {
+  width: 100%;
+
+  .about-wine__link {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-decoration: none;
+    color: var(--ui-link-color);
+  }
+}

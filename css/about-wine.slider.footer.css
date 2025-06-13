@@ -1,0 +1,16 @@
+.about-wine__slider-footer {
+  display: flex;
+  margin-top: 20px;
+
+  .footer-slider__pic {
+    width: clamp(34px, calc(16.5vw - 18.8px), 108px);
+    
+    @media (min-width: 768px) {
+      width: clamp(44px, calc(13vw - 55px), 102px);
+    }
+    .footer-img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

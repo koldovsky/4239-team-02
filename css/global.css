@@ -25,6 +25,23 @@
   --color-input-background: #25211f;
   --font-prata: "Prata", serif;
   --font-great-vibes: "Great Vibes", serif;
+
+  /* fonts */
+  --font-title: "Prata", serif;
+  --font-accent: "Great Vibes", cursive;
+  /* end fonts */
+
+  /* container */
+  --content-container-size: 1200px;
+  --container-padding: 24px;
+  /* end container */
+
+  /* colors */
+  --ui-text-color: #261e1c;
+  --ui-link-color: #1f1917;
+  --ui-accent-store: #61a854;
+  /* end colors */
+  
   font-family: "Rubik", sans-serif;
   scroll-behavior: smooth;
 }
@@ -32,6 +49,21 @@
 img {
   display: block;
   max-width: 100%;
+}
+
+.container {
+  margin: auto;
+  max-width: var(--content-container-size);
+  padding: 0 var(--container-padding);
+
+  @media (min-width: 768px) {
+    padding: 0 32px;
+  }
+}
+
+.w-section {
+  padding-top: 110px;
+  padding-bottom: 110px;
 }
 
 .btn {
