@@ -5,6 +5,14 @@
 }
 .info-cards__icon {
   color: var(--color-accent);
+
+.info-cards__icon svg {
+  transition: transform 0.6s ease-in-out;
+}
+
+.info-cards__icon:hover svg {
+  transform: rotate(360deg);
+}
 }
 .info-cards__title {
   font-family: "Prata", serif;
