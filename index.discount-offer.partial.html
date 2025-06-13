@@ -3,7 +3,6 @@
 -------------------------------------
   Цей блок містить пропозицію дисконту  
 
-
   Має залежність від блоку "Join
   Join Our / Newsletter Now" бо посилається на нього
 
@@ -11,15 +10,31 @@
   - шрифт заголовків: --font-prata
   - колір: --color-accent
   - колір тексту: --color-text-primary
-
  -->
 
-<section class="discount-offer">
+<section id="ankor" class="discount-offer">
   <div class="discount-offer__content">
     <h2 class="discount-offer__title">Get your 15% personal discount</h2>
     <p class="discount-offer__description">
-      Join our club of wine-lovers and be the first to know about the special offers.
+      Join our club of wine-lovers and be the first to know about the special
+      offers.
     </p>
-    <a href="#" class="btn discount-offer__button">Join</a>
+    <a href="#" class="btn discount-offer__button">
+      <span>Join</span>
+      <span class="btn-arrow">
+        <svg
+          width="32"
+          height="12"
+          viewBox="0 0 32 12"
+          xmlns="http://www.w3.org/2000/svg"
+          class="btn-arrow"
+        >
+          <path
+            d="M26.5556 7.2807V11.4403L31.9964 6.0011L26.556 0.560303L26.5556 4.7199H0.00439453V7.2803L26.5556 7.2807Z"
+            fill="currentColor"
+          />
+        </svg>
+      </span>
+    </a>
   </div>
 </section>
