@@ -1,14 +1,15 @@
 .info-cards {
-  background-color: #261e1c;
-  color: #898082;
+  background-color: var(--color-background-primary);
+  color: var(--color-text-secondary);
   padding: 20px;
 }
 .info-cards__icon {
-  color: #c8693a;
+  color: var(--color-accent);
+  width: "42"
 }
 .info-cards__title {
   font-family: "Prata", serif;
-  color: #ffffff;
+  color: var(--color-text-primary);
   font-size: 22px;
 }
 .info-cards__description {
