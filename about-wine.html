@@ -1,0 +1,78 @@
+<!-- created by Valentyn Tymofiiv -->
+<!-- global.about-wine.partial.html 
+------------------------------------- 
+Цей блок використовується при кліку на фото вина
+
+Пов'язаний з блоками, де є логіка кліку на продукті з відкривання опису продукту 
+та можливістю додати його до кошика
+
+Використовує:
+- глобальні нав та футер
+
+-->
+
+<!-- TODO 
+// * перейменувати сторінку, вивести у окремі
+* виправити CSS у цій сторінці
+* перейменувати інші стилі, убрати partial 
+* --font-prata -> 
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pinot Noir</title>
+    <link
+      rel="shortcut icon"
+      href="img/global/wine-store-icon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/about-wine.css" />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.nav.partial.html"
+      ></nav>
+    </header>
+
+    <section class="w-section about-wine">
+      <div class="container">
+        <div
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+          data-hx-get="about-wine.header.partial.html"
+        ></div>
+        <div class="about-wine__main">
+          <div
+            data-hx-trigger="load"
+            data-hx-swap="outerHTML"
+            data-hx-get="about-wine.slider.partial.html"
+          ></div>
+          <div
+            data-hx-trigger="load"
+            data-hx-swap="outerHTML"
+            data-hx-get="about-wine.info.partial.html"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="global.footer.partial.html"
+    ></footer>
+  </body>
+</html>

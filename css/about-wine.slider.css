@@ -1,0 +1,66 @@
+.about-wine__slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 46px;
+
+  @media (min-width: 768px) {
+    justify-content: start;
+  }
+
+  .abw-slider__wrapper {
+    position: relative;
+    width: 100%;
+
+    .abw-slider-button {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      border: none;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.5);
+      cursor: pointer;
+    }
+
+    .abw-slider-button--prev {
+      left: 6%;
+    }
+    
+    @media (min-width: 768px) {
+      .abw-slider-button--prev {
+        display: none;
+        left: 0;
+      }
+    }
+
+    .abw-slider-button--next {
+      right: 6%;
+    }
+    
+    @media (min-width: 768px) {
+      .abw-slider-button--next {
+        display: none;
+        right: 0;
+      }
+    }
+
+    .abw-slider__image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .product__img {
+        width: clamp(204px, calc(75vw - 36px), 540px);
+
+        @media (min-width: 768px) {
+          width: clamp(252px, calc(40vw - 60px), 428px);
+        }
+        
+      }
+    }
+  }
+}

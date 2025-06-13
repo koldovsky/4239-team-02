@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Prata&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Prata&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
 /* Imported fonts used on the site
      Rubik - default font          font-family: "Rubik", sans-serif;
@@ -9,39 +9,72 @@
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --color-background-primary: #261e1c;
-    --color-background-secondary: #241917; /* used in block 6 and possibly elsewhere */
-    --color-newsletter-background: #1a1512;
-    --color-footer-background: #1b1613;
-    --color-accent: #c8693a;
-    --color-text-primary: #ffffff;
-    --color-text-secondary: #898082;
-    --color-input-background: #25211f;
-    --font-prata: "Prata", serif;
-    font-family: "Rubik", sans-serif;
-    scroll-behavior: smooth;
+  --color-background-primary: #261e1c;
+  --color-background-secondary: #241917; /* used in block 6 and possibly elsewhere */
+  --color-newsletter-background: #1a1512;
+  --color-footer-background: #1b1613;
+  --color-accent: #c8693a;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #898082;
+  --color-input-background: #25211f;
+  --font-prata: "Prata", serif;
+  --font-great-vibes: "Great Vibes", serif;
+
+  /* fonts */
+  --font-title: "Prata", serif;
+  --font-accent: "Great Vibes", cursive;
+  /* end fonts */
+
+  /* container */
+  --content-container-size: 1200px;
+  --container-padding: 24px;
+  /* end container */
+
+  /* colors */
+  --ui-text-color: #261e1c;
+  --ui-link-color: #1f1917;
+  --ui-accent-store: #61a854;
+  /* end colors */
+  
+  font-family: "Rubik", sans-serif;
+  scroll-behavior: smooth;
 }
 
 img {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
-.btn {
-    padding: 0.75rem 1.5rem;
-    text-decoration: none;
-    font-weight: bold;
-    color: var(--color-text-primary);
-    background-color: var(--color-accent);
+.container {
+  margin: auto;
+  max-width: var(--content-container-size);
+  padding: 0 var(--container-padding);
+
+  @media (min-width: 768px) {
+    padding: 0 32px;
+  }
 }
 
 .w-section {
-    padding-top: 110px;
-    padding-bottom: 110px;
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--color-text-primary);
+  background-color: var(--color-accent);
+}
+
+.w-section {
+  padding-top: 110px;
+  padding-bottom: 110px;
 }
