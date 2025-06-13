@@ -3,15 +3,7 @@
     padding: 20px;
   }
 
-  .faq__faq {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  
-  .faq__title {
+   .faq__title {
     font-family: "Great Vibes", cursive;
     font-size: 28px;
     color: var(--color-accent);
