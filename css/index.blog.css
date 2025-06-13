@@ -4,6 +4,12 @@
   padding: 50px 24px 60px;
   background-color: var(--color-background-primary);
   color: var(--color-text-primary);
+  min-width: 320px;
+
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
 
   .blog__title {
     font-family: "Great Vibes", cursive;
@@ -25,7 +31,7 @@
   }
 
   .blog__decor-img {
-    margin: 0 auto;
+    margin: auto;
   }
 
   .blog__description {
@@ -36,67 +42,56 @@
   }
 
   .blog__list {
-    display: flex;
-    flex-basis: 100%;
-    flex-direction: column;
-    justify-content: flex-start;
-    .blog__item {
-      display: grid;
+    margin-top: 45px;
+    display: grid;
+    gap: 0;
 
-      margin: 50px 0 16px;
-      text-decoration-line: none;
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      padding: 0 19px;
+    }
+
+    .blog__item {
+      margin-bottom: 16px;
+
+      .blog__image {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+      }
+
+      .blog__content {
+        margin-top: 20px;
+
+        .blog__date {
+          font-size: 14px;
+        }
+
+        a {
+          color: var(--color-text-primary);
+          text-decoration-line: none;
+        }
+
+        .blog__item-title {
+          font-family: var(--font-prata);
+          font-weight: 400;
+          font-size: 22px;
+          margin-top: 20px;
+        }
+
+        .blog__excerpt {
+          margin-top: 20px;
+          line-height: 25.6px;
+        }
+      }
+    }
+    .blog__item--card {
+      margin-top: 50px;
+
+      @media (min-width: 768px){}
+       margin: 0 0 16px;
+    }
     }
   }
 }
-
-/* .blog {
-    background-color: #261e1c;
-    color: #fff;
-}
-
-.blog__title {
-    font-family: "Great Vibes", cursive;
-    font-size: 21px;
-    font-weight: 400;
-    color: #c8693a;
-}
-
-.blog__subtitle {
-    font-family: "Prata", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 41px;
-}
-
-.blog__description {
-    font-family: "Rubik", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 18px;
-}
-
-.blog__date {
-    font-family: "Rubik", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 14px;
-}
-
-.blog__item-title {
-    font-family: "Prata", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 22px;
-}
-
-.blog__excerpt-link {
-    font-family: "Rubik", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-}
-
-a {
-    color: #fff;
-    text-decoration-line: none;
-} */

@@ -1,16 +1,13 @@
 .blog-post {
   padding: 32px 24px 64px;
   color: var(--color-background-primary);
-  margin: 0 auto;
-  max-width: 1000px;
-  width: 100%;
+  margin: auto;
+  max-width: 1050px;
 
   .blog-post__image-wrapper {
     margin-bottom: 32px;
-    width: 100%;
 
     .blog-post__image {
-      /* display: block; */
       height: auto;
       object-fit: cover;
     }
@@ -35,6 +32,10 @@
 
         @media (min-width: 768px) {
           font-size: 41px;
+        }
+
+        @media (min-width: 990px) {
+          font-size: 48px;
         }
       }
     }
