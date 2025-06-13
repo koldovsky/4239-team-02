@@ -13,10 +13,12 @@
   .history__timeline {
     position: relative;
     padding-left: 20px;
-    border-left: 2px solid var(--color-accent);
-    display: grid;
-    grid-template-rows: row;
-    grid-gap: (4 * 1px);
+    border-bottom: 2px, solid var(--color-accent);
+    display: flex;
+    flex-direction: row;
+    flex-basis: auto;
+    flex-wrap: wrap;        
+      
   }     
 
   .history__item {

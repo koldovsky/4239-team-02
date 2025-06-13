@@ -2,27 +2,33 @@
     background-color: var(--color-background-primary);
     padding: 20px;
   }
+
+  .faq__faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
   
   .faq__title {
     font-family: "Great Vibes", cursive;
     font-size: 28px;
     color: var(--color-accent);
-    
-    
+      
   }
 
   .faq__image {
     display: block;
-    position: relative;
-    left: 1200px;
-
+    position: static;
+    
   }  
   .faq__discription {
   
     display: flex;
     flex-direction: column;
-    align-items: center;
-
+    align-items: right;
+    justify-content: center;
     
   }
   
@@ -36,11 +42,6 @@
   .faq__logo {
     display: block;
     margin-bottom: 20px;
-  }
-  
-  .faq__image {
-    display: block;
-    margin-bottom: 30px;
   }
   
   .faq__question {
