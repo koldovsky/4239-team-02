@@ -1,0 +1,15 @@
+.about-wine {
+  color: var(--color-text-dark);
+
+  .about-wine__main {
+    display: grid;
+    column-gap: 30px;
+    grid-template-columns: 1fr;
+
+    @media (min-width: 768px) {
+      /* grid-template-columns: repeat(2, minmax(367px, 1fr)); */
+      grid-template-columns: repeat(2, 1fr);
+      /* grid-template-columns: minmax(358px, 1fr) minmax(415px, 1fr); */
+    }
+  }
+}

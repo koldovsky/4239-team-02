@@ -1,14 +1,22 @@
 .info-cards {
-  background-color: #261e1c;
-  color: #898082;
+  background-color: var(--color-background-primary);
+  color: var(--color-text-secondary);
   padding: 20px;
 }
 .info-cards__icon {
-  color: #c8693a;
+  color: var(--color-accent);
+}
+.info-cards__icon svg {
+  transition: transform 0.6s ease-in-out;
+  filter: drop-shadow(2px 2px 4px rgba(177, 169, 169, 0.4));
+}
+
+.info-cards__icon:hover svg {
+  transform: rotate(360deg) scale(1.2);
 }
 .info-cards__title {
   font-family: "Prata", serif;
-  color: #ffffff;
+  color: var(--color-text-primary);
   font-size: 22px;
 }
 .info-cards__description {
