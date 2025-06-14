@@ -1,25 +1,11 @@
 @import "global.css";
+@import "global.about-wine.css";
 @import "about-wine.header.css";
 @import "about-wine.slider.css";
 @import "about-wine.slider.footer.css";
 @import "about-wine.info.css";
-@import "about-wine.footer.css";
 @import "global.footer.css";
 
-.about-wine {
-  color: var(--ui-text-color);
 
-  .about-wine__main {
-    display: grid;
-    column-gap: 30px;
-    grid-template-columns: 1fr;
-
-    @media (min-width: 768px) {
-      /* grid-template-columns: repeat(2, minmax(367px, 1fr)); */
-      grid-template-columns: repeat(2, 1fr);
-      /* grid-template-columns: minmax(358px, 1fr) minmax(415px, 1fr); */
-    }
-  }
-}
 
 
