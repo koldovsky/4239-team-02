@@ -41,7 +41,7 @@
   --ui-link-color: #1f1917;
   --ui-accent-store: #61a854;
   /* end colors */
-  
+
   font-family: "Rubik", sans-serif;
   scroll-behavior: smooth;
 }
@@ -57,7 +57,15 @@ img {
   padding: 0 var(--container-padding);
 
   @media (min-width: 768px) {
-    padding: 0 32px;
+    --container-padding: 32px;
+  }
+
+  @media (min-width: 992px) {
+    --container-padding: 40px;
+  }
+
+  @media (min-width: 1200px) {
+    --container-padding: 16px;
   }
 }
 
