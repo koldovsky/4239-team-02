@@ -12,6 +12,17 @@
     position: relative;
     width: 100%;
 
+    @media (min-width: 768px) {
+      &:hover .abw-slider-button--next {
+        right: 2%;
+        opacity: 1;
+      }
+      &:hover .abw-slider-button--prev {
+        left: 2%;
+        opacity: 1;
+      }
+    }
+
     .abw-slider-button {
       position: absolute;
       display: flex;
@@ -27,7 +38,7 @@
       cursor: pointer;
       transition: all 0.3s ease-out;
     }
-    
+
     .abw-slider-button--prev {
       left: 2%;
 
@@ -56,17 +67,6 @@
         @media (min-width: 768px) {
           width: clamp(252px, calc(40vw - 60px), 428px);
         }
-      }
-    }
-
-    @media (min-width: 768px) {
-      &:hover .abw-slider-button--next {
-        right: 2%;
-        opacity: 1;
-      }
-      &:hover .abw-slider-button--prev {
-        left: 2%;
-        opacity: 1;
       }
     }
   }
