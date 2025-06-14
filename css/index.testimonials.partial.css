@@ -1,32 +1,32 @@
-.testimonials{
-    background-color: var(--color-background-primary);
-    height: 500px;
-    background-image: url(../img/testimonials/grape-background.webp);
-    background-size: auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
+.testimonials {
+  background-color: var(--color-background-primary);
+  height: 500px;
+  background-image: url(../img/testimonials/grape-background.webp);
+  background-size: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-.testimonials__title{
-    font-family: var(--font-accent);
-    font-size: 21px;
-    color: var(--color-accent);
-    text-align: center;
+.testimonials__title {
+  font-family: var(--font-accent);
+  font-size: 21px;
+  color: var(--color-accent);
+  text-align: center;
 }
 
-.testimonials__subtitle{
-    font-family: var(--font-title);
-    font-size: 48px;
-    color: var(--color-text-primary);
-    text-align: center;
+.testimonials__subtitle {
+  font-family: var(--font-title);
+  font-size: 48px;
+  color: var(--color-text-primary);
+  text-align: center;
 }
 
-.testimonials__devider{
-    align-items: center;
+.testimonials__devider {
+  align-items: center;
 }
 
-.testimonials__quote{
-    font-size: 18px;
-    color: var(--color-text-secondary);
-    text-align: center;
+.testimonials__quote {
+  font-size: 18px;
+  color: var(--color-text-secondary);
+  text-align: center;
 }
