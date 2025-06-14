@@ -1,5 +1,5 @@
 .about-wine {
-  color: var(--ui-text-color);
+  color: var(--color-text-dark);
 
   .about-wine__main {
     display: grid;
