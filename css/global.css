@@ -37,9 +37,12 @@
   /* end container */
 
   /* colors */
-  --ui-text-color: #261e1c;
-  --ui-link-color: #1f1917;
-  --ui-accent-store: #61a854;
+  --color-text-dark: #261e1c;
+  --color-link-dark: #1f1917;
+  --color-accent-store: #61a854;
+  --color-input-border: #c5cbd6;
+  --color-bg-light: #fff;
+  --color-divider: #edf0f5;
   /* end colors */
 
   font-family: "Rubik", sans-serif;
