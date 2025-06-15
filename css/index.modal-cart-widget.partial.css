@@ -13,7 +13,7 @@
 
     .cart-widget__img {
         position: relative;
-
+background-color: var(--color-text-primary);
         height: 100%;
         border-radius: 50%;
     }
