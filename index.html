@@ -1,180 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wine Store Website</title>
-    <link
-      rel="shortcut icon"
-      href="img/global/wine-store-icon.png"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="css/index.css" />
-    <script
-      src="https://unpkg.com/htmx.org@1.9.10"
-      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <!-- Anna Snitko - Block 1 -->
 
-    <header>
-      <nav
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="global.nav.partial.html"
-      ></nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wine Store Website</title>
+  <link rel="shortcut icon" href="img/global/wine-store-icon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="css/index.css" />
+  <script src="https://unpkg.com/htmx.org@1.9.10"
+    integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+    crossorigin="anonymous"></script>
+</head>
 
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.header-hero.partial.html"
-      ></section>
-    </header>
+<body>
+  <!-- Anna Snitko - Block 1 -->
 
-    <!-- Andriy Rudavskiy - Block 2 -->
+  <header>
+    <nav data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.nav.partial.html"></nav>
 
-    <div
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="index.cards.partial.html"
-    ></div>
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.header-hero.partial.html"></section>
+  </header>
 
-    <div
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="index.our-wines-special.partial.html"
-    ></div>
+  <!-- Andriy Rudavskiy - Block 2 -->
 
-    <!-- Anna Snitko - Block 4 -->
+  <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.cards.partial.html"></div>
 
-    <section
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="index.best-deals.partial.html"
-    ></section>
+  <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.our-wines-special.partial.html"></div>
 
-    <!-- Ryzhkov Oleksandr - Block 5-->
+  <!-- Anna Snitko - Block 4 -->
 
-    <div
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="index.history.partial.html"
-    ></div>
+  <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.best-deals.partial.html"></section>
 
-    <!-- Pankin Nikita - Block 6 -->
+  <!-- Ryzhkov Oleksandr - Block 5-->
 
-    <section
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="index.wine-varieties.partial.html"
-    ></section>
+  <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.history.partial.html"></div>
 
-    <!-- Maria Rossa - Block 7 -->
+  <!-- Pankin Nikita - Block 6 -->
 
-    <div
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="index.craft-wines.partial.html"
-    ></div>
+  <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.wine-varieties.partial.html"></section>
 
-    <!-- Valentyn Tymofiiv - Block 9-->
-    <section class="w-section">
-      <div
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.wine-offers.partial.html"
-      ></div>
-      <div
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.discount-offer.partial.html"
-      ></div>
-    </section>
+  <!-- Maria Rossa - Block 7 -->
 
-    <!--Pavlo Pylypiuk - Block 10-->
+  <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.craft-wines.partial.html"></div>
 
-    <div
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="index.awards.partial.html"
-    ></div>
+  <!-- Valentyn Tymofiiv - Block 9-->
+  <section class="w-section">
+    <div class="container">
+      <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.wine-offers.partial.html"></div>
+      <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.discount-offer.partial.html"></div>
+    </div>
+  </section>
 
-    <!-- Vladyslav Savchuk - Block 11 -->
+  <!--Pavlo Pylypiuk - Block 10-->
 
-    <div
-    data-hx-trigger="load"
-    data-hx-swap="outerHTML"
-    data-hx-get="index.testimonials.partial.html"
-    ></div>
+  <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.awards.partial.html"></div>
 
-    <!-- Taras Yaremko - Block 12 -->
+  <!-- Vladyslav Savchuk - Block 11 -->
 
-    <div
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="index.blog.partial.html"
-    ></div>
+  <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.testimonials.partial.html"></div>
 
-    <!-- Ryzhkov Oleksandr - Block 13-->
+  <!-- Taras Yaremko - Block 12 -->
 
-    <div
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="index.faq.partial.html"
-    ></div>
+  <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.blog.partial.html"></div>
 
-    <!-- Mochalnykov Yurii- Block 14 -->
+  <!-- Ryzhkov Oleksandr - Block 13-->
 
-    <div
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="index.info-cards.partial.html"
-    ></div>
+  <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.faq.partial.html"></div>
 
-    <!-- Andrii Rybak - Block 15 Footer + Newsletter section  &  Block 16 Confirmation of age-->
-    <section
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="index.newsletter-section.partial.html"
-    ></section>
+  <!-- Mochalnykov Yurii- Block 14 -->
 
-    <footer
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="global.footer.partial.html"
-    ></footer>
+  <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.info-cards.partial.html"></div>
 
-    <div
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="global.confirmation-of-age-modal.partial.html"
-    ></div>
+  <!-- Andrii Rybak - Block 15 Footer + Newsletter section  &  Block 16 Confirmation of age-->
+  <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.newsletter-section.partial.html">
+  </section>
 
-    <!-- Iryna Zhmailo - Block 17 -->
+  <footer data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.footer.partial.html"></footer>
 
-    <div
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="index.modal-cart-widget.partial.html"
-    ></div>
+  <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.confirmation-of-age-modal.partial.html">
+  </div>
 
-    <div
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="index.modal-shopping-cart.partial.html"
-    ></div>
+  <!-- Iryna Zhmailo - Block 17 -->
 
-    <div
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="index.order-confirmation.partial.html"
-    ></div>
+  <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.modal-cart-widget.partial.html"></div>
 
-    <!-- Valentyn Tymofiiv - Block 18 -->
-    <!-- global.add-to-cart.partial.html перейменував 
-        нова назва global.about-wine.partial.html -->
-  </body>
+  <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.modal-shopping-cart.partial.html"></div>
+ <!-- separate page:
+  <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="order-confirmation.html"></div>
+ -->
+
+  <!-- Valentyn Tymofiiv - Block 18 -->
+  <!-- separate page: about-wine.html -->
+</body>
+
 </html>
