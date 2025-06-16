@@ -1,4 +1,5 @@
 .awards {
+    background-color: var(--color-background-primary);
     display: flex;
     flex-direction: column;
     justify-content: center;
