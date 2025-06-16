@@ -5,7 +5,14 @@
   gap: 40px;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 40 100px;
+  padding: 60px 20px;
+}
+.info-cards__item {
+  flex: 1 1 calc(25% - 40px);
+  min-width: 260px;
+  text-align: center;
+  padding: 0 10px; 
+  box-sizing: border-box;
 }
 .info-cards__icon {
   color: var(--color-accent);
@@ -22,8 +29,23 @@
   font-family: "Prata", serif;
   color: var(--color-text-primary);
   font-size: 22px;
+  margin-bottom: 12px; 
+  position: relative;
 }
 .info-cards__description {
   font-family: "Rubik", sans-serif;
   font-size: 16px;
+  margin-top: 16px; 
+  line-height: 1.6;
+}
+@media (max-width: 1024px) {
+  .info-cards__item {
+    flex: 1 1 calc(50% - 40px);
+  }
+}
+
+@media (max-width: 600px) {
+  .info-cards__item {
+    flex: 1 1 100%;
+  }
 }
