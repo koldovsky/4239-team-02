@@ -1,15 +1,10 @@
 /* Taras Yaremko */
 
 .blog {
-  padding: 50px 24px 60px;
+  padding: 50px 0 60px;
   background-color: var(--color-background-primary);
   color: var(--color-text-primary);
   min-width: 320px;
-
-  .container {
-    max-width: 1200px;
-    margin: auto;
-  }
 
   .blog__title {
     font-family: "Great Vibes", cursive;
@@ -44,54 +39,63 @@
   .blog__list {
     margin-top: 45px;
     display: grid;
-    gap: 0;
+    align-items: stretch;
+    grid-template-columns: 1fr;
+  }
 
-    @media (min-width: 768px) {
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      padding: 0 19px;
+  .blog__item:not(:first-child) {
+    margin-top: 50px;
+  }
+
+  @media (min-width: 768px) {
+    .blog__list {
+      grid-template-columns: 1fr 1fr 1fr;
+      /* column-gap: 38px; */
     }
 
-    .blog__item {
-      margin-bottom: 16px;
-
-      .blog__image {
-        width: 100%;
-        height: auto;
-        display: block;
-        object-fit: cover;
-      }
-
-      .blog__content {
-        margin-top: 20px;
-
-        .blog__date {
-          font-size: 14px;
-        }
-
-        a {
-          color: var(--color-text-primary);
-          text-decoration-line: none;
-        }
-
-        .blog__item-title {
-          font-family: var(--font-prata);
-          font-weight: 400;
-          font-size: 22px;
-          margin-top: 20px;
-        }
-
-        .blog__excerpt {
-          margin-top: 20px;
-          line-height: 25.6px;
-        }
-      }
-    }
-    .blog__item--card {
-      margin-top: 50px;
-
-      @media (min-width: 768px){}
-       margin: 0 0 16px;
-    }
+    .blog__item,
+    .blog__item:not(:first-child) {
+      margin: 0 19px;
     }
   }
 
+  .blog__image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+
+  .blog__content {
+    margin-top: 20px;
+
+    .blog__date {
+      font-size: 14px;
+    }
+
+    a {
+      color: var(--color-text-primary);
+      text-decoration-line: none;
+    }
+
+    .blog__item-title {
+      font-family: var(--font-prata);
+      font-weight: 400;
+      font-size: 22px;
+      margin-top: 20px;
+    }
+
+    .blog__excerpt {
+      margin-top: 20px;
+      line-height: 25.6px;
+    }
+  }
+}
+.blog__item--card {
+  margin-top: 50px;
+
+  /* @media (min-width: 768px) {
+      
+      margin: 0 0 16px;
+    } */
+}
