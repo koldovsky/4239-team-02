@@ -17,7 +17,7 @@
 
 .order-confirmation__product,
 .order-confirmation__details {
-    border: 2px solid rgba(38, 30, 28, 0.12);
+    border: 2px solid var(--color-background-primary);
 
     .order-confirmation__product-list {
         width: 100%;
@@ -33,7 +33,7 @@
     .order-confirmation__product-item {
         flex-direction: row;
         display: flex;
-        border-bottom: 1px solid #ddd;
+        border-bottom: 1px solid var(--color-input-border);
         display: grid;
 
         grid-template-columns: 46px 60% auto max-content;
