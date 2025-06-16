@@ -2,10 +2,10 @@
   background-color: var(--color-background-primary);
   color: var(--color-text-secondary);
   display: flex;
-  gap: 20px;
+  gap: 40px;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 20px;
+  padding: 40 100px;
 }
 .info-cards__icon {
   color: var(--color-accent);
