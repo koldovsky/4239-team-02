@@ -8,9 +8,12 @@
     right: 30px;
     top: 80px;
     padding: 0;
+    width: 50px;
+    height: 50px;
+@media (min-width: 768px) {
     width: 70px;
     height: 70px;
-
+}
     .cart-widget__img {
         position: relative;
 background-color: var(--color-text-primary);
@@ -26,11 +29,15 @@ background-color: var(--color-text-primary);
             right: -2px;
             display: flex;
             position: absolute;
-            width: 24px;
-            height: 24px;
+            width: 20px;
+            height: 20px;
             border-radius: 50%;
             justify-content: center;
             align-items: center;
+            @media (min-width: 768px) {
+    width: 24px;
+    height: 24px;
+}
         }
     }
 }
