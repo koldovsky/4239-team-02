@@ -1,18 +1,35 @@
 /* Import css files in the order corresponding to the blocks in index.html */
 
 @import "global.css";
-@import "index.history.partial.css";                        /* Ryzhkov Oleksandr - Block 5 */
-@import "index.craft-wines.css";                            /* Maria Rossa - Block 7 */
-@import "index.discount-offer.partial.css";                 /* Valentyn Tymofiiv - Block 9 */
-@import "index.wine-offers.partial.css";                    /* Valentyn Tymofiiv - Block 9 */
-@import "index.awards.css";                                 /* Pavlo Pylypiuk - Block 10 */
-@import "index.testimonials.partial.css";                   /* Vladyslav Savchuk - Block 11 */
-@import "index.blog.css";                                   /* Taras Yaremko - Block 12 */
-@import "index.faq.partial.css";                            /* Ryzhkov Oleksandr - Block 13 */
-@import "index.info-cards.css";                             /* Mochalnykov Yurii- Block 14 */
-@import "index.newsletter-section.css";                     /* Andrii Rybak - Block 15 */
-@import "global.footer.css";                                /* Andrii Rybak - Block 15 */
-@import "global.confirmation-of-age-modal.css";             /* Andrii Rybak - Block 16 */
-@import "index.modal-cart-widget.partial.css";              /* Iryna Zhmailo - Block 17 */
-@import "index.modal-shopping-cart.partial.css";            /* Iryna Zhmailo - Block 17 */
-@import "index.order-confirmation.partial.css";             /* Iryna Zhmailo - Block 17 */
+@import "index.history.partial.css";
+/* Ryzhkov Oleksandr - Block 5 */
+@import "index.craft-wines.css";
+/* Maria Rossa - Block 7 */
+@import "index.discount-offer.partial.css";
+/* Valentyn Tymofiiv - Block 9 */
+@import "index.wine-offers.partial.css";
+/* Valentyn Tymofiiv - Block 9 */
+@import "index.awards.css";
+/* Pavlo Pylypiuk - Block 10 */
+@import "index.testimonials.partial.css";
+/* Vladyslav Savchuk - Block 11 */
+@import "index.blog.css";
+/* Taras Yaremko - Block 12 */
+@import "index.faq.partial.css";
+/* Ryzhkov Oleksandr - Block 13 */
+@import "index.info-cards.css";
+/* Mochalnykov Yurii- Block 14 */
+@import "index.newsletter-section.css";
+/* Andrii Rybak - Block 15 */
+@import "global.footer.css";
+/* Andrii Rybak - Block 15 */
+@import "global.confirmation-of-age-modal.css";
+/* Andrii Rybak - Block 16 */
+@import "index.modal-cart-widget.partial.css";
+/* Iryna Zhmailo - Block 17 */
+@import "index.modal-shopping-cart.partial.css";
+/* Iryna Zhmailo - Block 17 */
+@import "order-confirmation.css";
+/* Iryna Zhmailo - Block 17 */
+@import "order-confirmation.page.partial.css";
+/* Iryna Zhmailo - Block 17 */
