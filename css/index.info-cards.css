@@ -1,11 +1,11 @@
 .info-cards {
   background-color: var(--color-background-primary);
   color: var(--color-text-secondary);
-  padding: 0 20px;
+  padding: 20px;
   display: flex;
   flex-wrap: wrap; 
   gap: 20px; 
-  justify-content: center;
+  justify-content: space-between;
 }
 .info-cards__item {
   background-color: var(--color-background-secondary); 
