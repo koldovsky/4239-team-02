@@ -1,25 +1,49 @@
 .history {
     background-color: var(--color-background-primary);
-    padding: 20px;
+    padding: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: minmax(50px, auto);
+    gap: 40px; 
+    align-items:  center;
+    justify-content: center;
+    max-width: 100%;
+
+    @media screen and (max-width: 990px) {
+      grid-template-columns: repeat(4, 1fr);
+      padding: 80px;
+    }
+    @media screen and (max-width: 780px) {
+      grid-template-columns: repeat(3, 1fr);
+      padding: 50px;
+    }
+    @media screen and (max-width: 640px) {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 20px;
+    } 
+    @media screen and (max-width: 480px) {
+      grid-template-columns: 1fr;
+      padding: 10px;
+    }   
+       
   }
-  
+    
   .history__image {
+    grid-column: 1 / -1; 
     display: block;
     max-width: 100%;
     height: auto;
     margin-bottom: 20px;
-  }
-  
-  .history__timeline {
-    position: relative;
-    padding-left: 20px;
-    border-bottom: 2px, solid var(--color-accent);
-    display: flex;
-    flex-direction: row;
-    flex-basis: auto;
-    flex-wrap: wrap;        
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
       
-  }     
+  }
+
+  .history__line {
+    background-color: var(--color-background-primary);
+  
+  }      
 
   .history__item {
     background-color: var(--color-background-primary);
@@ -33,21 +57,21 @@
     font-style: italic;
     font-size: 14px;
     color: var(--color-accent);
-    
+    gap: 0, 10px;
   }
   
   .history__title {
-    --font-prata: "Prata", serif, cursive;
+    font-family: "Prata", serif, cursive;
     font-weight: normal;
     font-size: 22px;
     color: var(--color-text-primary);
-        
+    gap: 10px;    
   }
   
   .history__description {
-    font-family: "Rubik", sans-serif;
+    font-family: "Rubik", sans-serif, serif;
     font-weight: normal;
     font-size: 16px;
     color: var(--color-text-secondary);
-    margin: 0;
+    gap:  10px;
   }
