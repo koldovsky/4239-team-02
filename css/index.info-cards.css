@@ -1,20 +1,11 @@
 .info-cards {
   background-color: var(--color-background-primary);
   color: var(--color-text-secondary);
-  padding: 20px;
   display: flex;
-  flex-wrap: wrap; 
-  gap: 20px; 
+  gap: 20px;
+  flex-wrap: wrap;
   justify-content: space-between;
-}
-.info-cards__item {
-  background-color: var(--color-background-secondary); 
-  flex: 1 1 calc(25% - 20px); 
-  min-width: 250px; 
   padding: 20px;
-  border-radius: 12px;
-  box-sizing: border-box;
-  transition: transform 0.3s ease;
 }
 .info-cards__icon {
   color: var(--color-accent);
