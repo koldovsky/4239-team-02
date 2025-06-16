@@ -1,7 +1,11 @@
 .info-cards {
   background-color: var(--color-background-primary);
   color: var(--color-text-secondary);
-  padding: 20px;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 20px; 
+  justify-content: center;
 }
 .info-cards__icon {
   color: var(--color-accent);
