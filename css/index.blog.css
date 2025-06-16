@@ -55,7 +55,8 @@
 
     .blog__item,
     .blog__item:not(:first-child) {
-      margin: 0 19px;
+      margin: 0;
+      padding: 0 19px;
     }
   }
 
