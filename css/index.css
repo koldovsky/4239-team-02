@@ -1,6 +1,8 @@
 /* Import css files in the order corresponding to the blocks in index.html */
 
 @import "global.css";
+@import "index.cards-our-wine-special";
+/* Andriy Rudavskiy - Block 2 */
 @import "index.history.partial.css";
 /* Ryzhkov Oleksandr - Block 5 */
 @import "index.craft-wines.css";
