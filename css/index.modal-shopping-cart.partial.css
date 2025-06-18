@@ -16,6 +16,7 @@
 
 .cart__header {
 	background-color: var(--color-shopping-cart);
+	
 	display: flex;
 	position: relative;
 	height: auto;
@@ -148,6 +149,7 @@
 .cart__input,
 .cart__textarea {
 	background-color: var(--color-shopping-input);
+	border: 1px solid var(--color-shopping-input);
 	margin-top: 12px;
 	margin-bottom: 24px;
 	padding: 16px 25px 16px 25px;
