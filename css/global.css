@@ -46,6 +46,7 @@
   --color-bg-light: #fff;
   --color-divider: #edf0f5;
        --color-shopping-cart: #f7f8fa;
+      --color-shopping-input: rgba(38, 30, 28, 0.12);
   /* end colors */
 
   font-family: "Rubik", sans-serif;
