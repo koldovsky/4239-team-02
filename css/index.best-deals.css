@@ -1,4 +1,4 @@
-/*
+/* in progress*/
 
 .best-deals {
     background-color: var(--color-background-primary);
@@ -23,7 +23,7 @@
 
     .best-deals__decoration {
         display: block;
-        margin: 0 auto;   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        margin: 0 auto;
     }
 
     .best-deals__description {
@@ -53,5 +53,3 @@
         }
     }
 }
-
-*/
