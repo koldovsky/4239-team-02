@@ -1,4 +1,4 @@
-.blog-post {
+.blog-post container {
   padding: 32px 24px 64px;
   color: var(--color-background-primary);
   margin: auto;
