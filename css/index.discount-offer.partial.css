@@ -63,30 +63,3 @@
     }
   }
 }
-
-
-/* .discount-offer {
-  padding: 3rem 2rem;
-  color: var(--color-text-primary);
-  background-image: url("../img/index/bg_discount-offer.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: var(--color-accent);
-}
-
-.discount-offer__content {
-}
-
-.discount-offer__title {
-  font-family: var(--font-prata);
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.discount-offer__description {
-  margin-bottom: 1.5rem;
-}
-
-.discount-offer__button {
-  border: 2px solid var(--color-text-primary);
-}
