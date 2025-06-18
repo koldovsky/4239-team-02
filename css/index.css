@@ -1,12 +1,12 @@
 /* Import css files in the order corresponding to the blocks in index.html */
 
 @import "global.css";
-@import "index.cards-our-wine-special";
-/* Andriy Rudavskiy - Block 2 */
 @import "global.nav.css";
 /* Anna Snitko - Block 1 */
 @import "index.header-hero.css";
 /* Anna Snitko - Block 1 */
+@import "index.cards-our-wine-special";
+/* Andriy Rudavskiy - Block 2 */
 @import "index.best-deals.css";
 /* Anna Snitko - Block 4 */
 @import "index.history.partial.css";
