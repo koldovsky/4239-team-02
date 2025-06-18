@@ -15,10 +15,12 @@
 /* Pankin Nikita - Block 6 */
 @import "index.wine-varieties.partial.css";
 /* Maria Rossa - Block 7 */
-@import "index.discount-offer.partial.css";
+
 /* Valentyn Tymofiiv - Block 9 */
 @import "index.wine-offers.partial.css";
-/* Valentyn Tymofiiv - Block 9 */
+@import "index.discount-offer.partial.css";
+/* end block 9 */
+
 @import "index.awards.css";
 /* Pavlo Pylypiuk - Block 10 */
 @import "index.testimonials.partial.css";
