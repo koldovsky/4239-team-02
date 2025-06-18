@@ -1,0 +1,40 @@
+/*
+.hero {
+    padding-top: 110px;
+    padding-bottom: 130px;
+
+    .hero__content {
+        display: flex;
+        margin-top: 50px;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: left;
+
+        .hero__subtitle {
+            font-family: var(--font-accent);
+            color: var(--color-accent);
+            font-size: 0.875rem;
+            font-weight: normal;
+        }
+
+        .hero__title {
+            font-family: var(--font-title);
+            color: var(--color-text-primary);
+            font-size: 3.625rem;
+            font-weight: normal;
+        }
+
+        .hero__decoration {
+            width: 272px;
+        }
+
+        .hero__description {
+            color: var(--color-text-primary);
+            font-size: 1.125rem;
+        }
+    }
+
+
+}
+
+*/

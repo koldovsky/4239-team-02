@@ -3,6 +3,12 @@
 @import "global.css";
 @import "index.cards-our-wine-special";
 /* Andriy Rudavskiy - Block 2 */
+@import "global.nav.css";
+/* Anna Snitko - Block 1 */
+@import "index.header-hero.css";
+/* Anna Snitko - Block 1 */
+@import "index.best-deals.css";
+/* Anna Snitko - Block 4 */
 @import "index.history.partial.css";
 /* Ryzhkov Oleksandr - Block 5 */
 @import "index.craft-wines.css";
