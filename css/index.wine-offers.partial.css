@@ -77,31 +77,3 @@
     }
   }
 }
-
-/* .wine-offers__wrapper {
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-
-.offer-card {
-  padding: 2rem;
-  color: var(--color-text-primary);
-  background-size: cover;
-  background-position: center;
-  flex: 1;
-}
-
-.offer-card--red {
-}
-
-
-.offer-card__title {
-  font-family: var(--font-prata);
-  font-size: 1.75rem;
-  margin-bottom: 0.5rem;
-}
-
-.offer-card__description {
-  margin-bottom: 1rem;
-} */
