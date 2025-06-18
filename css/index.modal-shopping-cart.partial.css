@@ -110,8 +110,8 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	margin-top: 24px;
-	margin-bottom: 24px;
+	    margin-bottom: 24px;
+    margin-top: 24px;
 	/* flex-flow: row wrap; */
 	.cart__promo-link {
 		    color: inherit;
