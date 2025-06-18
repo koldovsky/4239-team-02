@@ -4,7 +4,6 @@
 	font-size: 16px;
 	line-height: 1.6;
 	font-weight: 400;
-	background-color: bisque;
 	position: relative;
 	margin: 10% auto calc(10% + 80px);
 	width: 100%;
@@ -91,6 +90,7 @@
 
 	.cart__product-link {
 		text-decoration: none;
+		color: inherit;
 	}
 
 	.cart__product-info span {
@@ -111,6 +111,9 @@
 	flex-direction: row;
 	justify-content: space-between;
 	/* flex-flow: row wrap; */
+	.cart__promo-link {
+		    color: inherit;
+	}
 }
 
 .cart__promo span {
