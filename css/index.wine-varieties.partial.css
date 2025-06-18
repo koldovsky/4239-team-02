@@ -1,0 +1,93 @@
+.wine-varieties {
+
+  color: var(--color-text-primary);
+  position: relative;
+
+  .wine-varieties__background {
+    position: absolute;
+    width: 100%;
+    height: 110%;
+    z-index: 0;
+    background-color: var(--color-background-secondary);
+
+    @media (min-width: 768px) {
+      background: url('../img/wine-varieties/wine-bottle-background.jpg') center/cover no-repeat;
+    } 
+  }
+
+  .wine-varieties__content {
+    position: relative;
+    z-index: 1;
+    padding: 40px;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: 0;
+
+    @media (max-width: 980px) and (min-width: 768px) {
+        padding: 110px;
+    }
+
+    .wine-varieties__subtitle {
+        font-family: var(--font-great-vibes);
+        font-size: 21px;
+        color: var(--color-accent);
+
+        @media (max-width: 426px) {
+        font-size: 14px;
+      }
+    }
+
+    .wine-varieties__title {
+        font-family: var(--font-title);
+        font-size: 41px;
+        font-weight: normal;
+        padding-top: 25px;
+
+        @media (max-width: 426px) {
+        font-size: 34px;
+        }
+    }
+
+    .wine-varieties__divider {
+        .wine-varieties__branch-img {
+        padding-top: 25px;
+        }
+    }
+
+    .wine-varieties__description {
+        font-size: 18px;
+        padding-top: 25px;
+    }
+
+    .wine-varieties__categories {
+
+        .wine-varieties__category {
+        
+        padding-top: 40px;
+
+        .wine-varieties__category-title {
+            font-size: 22px;
+        }
+
+        .wine-varieties__list {
+
+            padding-top: 25px;
+            list-style: none;
+            
+            .wine-varieties__item {
+            
+            font-size: 16px;
+
+            .wine-varieties__list-mark {
+                color: var(--color-accent);
+            }
+
+            .wine-varieties__name {
+                color: var(--color-text-secondary);
+            }
+          }
+        }
+      }
+    }
+  }
+}
