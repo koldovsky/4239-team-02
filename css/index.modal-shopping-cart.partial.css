@@ -147,7 +147,7 @@
 
 .cart__input,
 .cart__textarea {
-	background-color: var(--color-text-primary);
+	background-color: var(--color-shopping-input);
 	margin-top: 12px;
 	margin-bottom: 24px;
 	padding: 16px 25px 16px 25px;
