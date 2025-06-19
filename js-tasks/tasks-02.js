@@ -62,4 +62,4 @@ function lovefunc(flower1, flower2) {
 }
 
 // -- Snitko Anna --
-const lovefunc = (f1, f2) => (f1 + f2) % 2 === 1;
+const lovefunc = (flower1, flower2) => (flower1 + flower2) % 2 === 1;
