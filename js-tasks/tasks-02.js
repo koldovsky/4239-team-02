@@ -5,6 +5,10 @@
 function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
   return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
 }
+// -- Andriy Rudavskiy  --
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  return laLigaGoals + copaDelReyGoals + championsLeagueGoals
+}
 
 // -- Snitko Anna --
 const goals = (laLigaGoals, copaDelReyGoals, championsLeagueGoals) => laLigaGoals + copaDelReyGoals + championsLeagueGoals;
@@ -30,6 +34,11 @@ function makeNegative(num) {
   return num > 0 ? -num : num;
 }
 
+// -- Andriy Rudavskiy  --
+function makeNegative(num) {
+  return num > 0 ? -num : num;
+}
+
 // 3. Game Move
 // https://www.codewars.com/kata/grasshopper-terminal-game-move-function/train/javascript
 
@@ -44,6 +53,11 @@ const move = (position, roll) => position + roll * 2;
 // === Andrii Rybak ===
 function move (position, roll) {
   return position + 2 * roll;
+}
+
+// -- Andriy Rudavskiy  --
+function move (position, roll) {
+  return position + roll * 2
 }
 
 // 4. Personalized Message
@@ -62,6 +76,17 @@ function greet (name, owner) {
   return name === owner ? "Hello boss" : "Hello guest";
 }
 
+// -- Andriy Rudavskiy  --
+function greet (name, owner) {
+  if (name == owner)
+    {
+    return 'Hello boss'
+  } 
+else
+  { return 'Hello guest'
+}
+}
+
 // 5. Keep Hydrated
 // https://www.codewars.com/kata/keep-hydrated-1/train/javascript
 
@@ -76,6 +101,11 @@ const litres = (time) => Math.floor(time * 0.5);
 // === Andrii Rybak ===
 function litres(time) {
   return Math.floor(0.5 * time);
+}
+
+// -- Andriy Rudavskiy  --
+function litres(time) {
+  return Math.floor (time * 0.5)
 }
 
 // 6. Opposites Attract
@@ -93,3 +123,9 @@ const lovefunc = (flower1, flower2) => (flower1 + flower2) % 2 === 1;
 function lovefunc(flower1, flower2){
   return (flower1 + flower2) % 2 === 1;
 }
+
+// -- Andriy Rudavskiy  --
+function lovefunc(flower1, flower2){
+  return (flower1 % 2) !== (flower2 % 2);
+}
+
