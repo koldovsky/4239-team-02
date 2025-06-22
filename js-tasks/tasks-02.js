@@ -76,6 +76,10 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
   return Math.abs(dadYearsOld - 2 * sonYearsOld);
 }
 
+// -- Iryna Zhmailo --
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+ return Math.abs(dadYearsOld - 2 * sonYearsOld)
+}
 // 3. https://www.codewars.com/kata/5933a1f8552bc2750a0000ed/train/javascript
 
 // -- Anna Snitko --
