@@ -6,7 +6,7 @@ const stringToArray = string => string.split(' ');
 
 // -- Iryna Zhmailo --
 function stringToArray(string) {
-	return string.split(" ");
+  return string.split(" ");
 }
 console.log(stringToArray("Robin Singh")); 
 
@@ -14,7 +14,7 @@ console.log(stringToArray("Robin Singh"));
 
 // -- Iryna Zhmailo --
 function DNAtoRNA(dna) {
-	return dna.replaceAll("T", "U");
+  return dna.replaceAll("T", "U");
 }
 console.log(DNAtoRNA("GCAT"));
 
@@ -26,10 +26,10 @@ const DNAtoRNA = dna => dna.replace(/T/g, 'U');
 
 // -- Iryna Zhmailo --
 var min = function (list) {
-	return Math.min(...list);
+  return Math.min(...list);
 };
 var max = function (list) {
-	return Math.max(...list);
+  return Math.max(...list);
 };
 
 // -- Anna Snitko --
@@ -50,12 +50,12 @@ function min(arr, toReturn) {
 
 // -- Iryna Zhmailo --
 function min(arr, toReturn) {
-	const smallest = Math.min(...arr);
-	if (toReturn === "value") {
-		return smallest;
-	} else {
-		return arr.indexOf(smallest);
-	}
+ const smallest = Math.min(...arr);
+ if (toReturn === "value") {
+  return smallest;
+ } else {
+  return arr.indexOf(smallest);
+ }
 }
 // ---ДОДАТКОВІ ЗАДАЧІ---
 // 1. https://www.codewars.com/kata/53ee5429ba190077850011d4/train/javascript
@@ -67,7 +67,7 @@ function doubleInteger(i) {
 
 // -- Iryna Zhmailo --
 function doubleInteger(i) {
-  return i * 2;
+ return i * 2;
 }
 // 2. https://www.codewars.com/kata/5b853229cfde412a470000d0/train/javascript
 
@@ -87,6 +87,10 @@ function nthEven(n){
   return (n - 1) * 2;
 }
 
+// -- Iryna Zhmailo --
+function nthEven(n){
+  return (n - 1) * 2;
+}
 // 4. https://www.codewars.com/kata/574b3b1599d8f897470018f6/train/javascript
 
 // -- Anna Snitko --
