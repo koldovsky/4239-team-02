@@ -32,8 +32,21 @@ var max = function (list) {
 	return Math.max(...list);
 };
 
+// -- Anna Snitko --
+var min = function(list){
+    return Math.min(...list)
+}
+var max = function(list){
+    return Math.max(...list)
+}
+
 // 2. https://www.codewars.com/kata/544a54fd18b8e06d240005c0/train/javascript
 
+// -- Anna Snitko --
+function min(arr, toReturn) { 
+  const minValue = Math.min(...arr);
+  return toReturn === 'value' ? minValue : arr.indexOf(minValue);
+}
 
 // ---ДОДАТКОВІ ЗАДАЧІ---
 // 1. https://www.codewars.com/kata/53ee5429ba190077850011d4/train/javascript
