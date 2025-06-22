@@ -2,9 +2,7 @@
 // 1. https://www.codewars.com/kata/convert-a-string-to-an-array/train/javascript
 
 // -- Anna Snitko --
-function stringToArray(string){
-	// code code code
-}
+const stringToArray = string => string.split(' ');
 
 // -- Iryna Zhmailo --
 function stringToArray(string) {
