@@ -6,6 +6,12 @@ function stringToArray(string){
 	// code code code
 }
 
+// -- Iryna Zhmailo --
+function stringToArray(string) {
+	return string.split(" ");
+}
+console.log(stringToArray("Robin Singh")); 
+
 // 2. https://www.codewars.com/kata/dna-to-rna-conversion/train/javascript
 
 
