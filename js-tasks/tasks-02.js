@@ -17,6 +17,10 @@ function DNAtoRNA(dna) {
 	return dna.replaceAll("T", "U");
 }
 console.log(DNAtoRNA("GCAT"));
+
+// -- Anna Snitko --
+const DNAtoRNA = dna => dna.replace(/T/g, 'U');
+
 // ---ПОГЛИБЛЕНІ ЗАДАЧІ---
 // 1. https://www.codewars.com/kata/577a98a6ae28071780000989/train/javascript
 
