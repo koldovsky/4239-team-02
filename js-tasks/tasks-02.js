@@ -22,6 +22,14 @@ console.log(DNAtoRNA("GCAT"));
 // ---ПОГЛИБЛЕНІ ЗАДАЧІ---
 // 1. https://www.codewars.com/kata/577a98a6ae28071780000989/train/javascript
 
+// -- Iryna Zhmailo --
+var min = function (list) {
+	return Math.min(...list);
+};
+var max = function (list) {
+	return Math.max(...list);
+};
+
 // 2. https://www.codewars.com/kata/544a54fd18b8e06d240005c0/train/javascript
 
 
