@@ -65,6 +65,10 @@ function doubleInteger(i) {
   return i * 2;
 }
 
+// -- Iryna Zhmailo --
+function doubleInteger(i) {
+  return i * 2;
+}
 // 2. https://www.codewars.com/kata/5b853229cfde412a470000d0/train/javascript
 
 // -- Anna Snitko --
