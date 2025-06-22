@@ -51,12 +51,44 @@ function min(arr, toReturn) {
 // ---ДОДАТКОВІ ЗАДАЧІ---
 // 1. https://www.codewars.com/kata/53ee5429ba190077850011d4/train/javascript
 
+// -- Anna Snitko --
+function doubleInteger(i) {
+  return i * 2;
+}
+
 // 2. https://www.codewars.com/kata/5b853229cfde412a470000d0/train/javascript
+
+// -- Anna Snitko --
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  return Math.abs(dadYearsOld - 2 * sonYearsOld);
+}
 
 // 3. https://www.codewars.com/kata/5933a1f8552bc2750a0000ed/train/javascript
 
+// -- Anna Snitko --
+function nthEven(n){
+  return (n - 1) * 2;
+}
+
 // 4. https://www.codewars.com/kata/574b3b1599d8f897470018f6/train/javascript
+
+// -- Anna Snitko --
+function getRealFloor(n) {
+  if (n <= 0) return n;
+  if (n >= 13) return n - 2;
+  return n - 1;
+}
 
 // 5. https://www.codewars.com/kata/55f9bca8ecaa9eac7100004a/train/javascript
 
+// -- Anna Snitko --
+function past(h, m, s){
+  return ((h * 3600) + (m * 60) + s) * 1000;
+}
+
 // 6. https://www.codewars.com/kata/5545f109004975ea66000086/train/javascript
+
+// -- Anna Snitko --
+function isDivisible(n, x, y) {
+  return n % x === 0 && n % y === 0;
+}
