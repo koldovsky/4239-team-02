@@ -14,7 +14,11 @@ console.log(stringToArray("Robin Singh"));
 
 // 2. https://www.codewars.com/kata/dna-to-rna-conversion/train/javascript
 
-
+// -- Iryna Zhmailo --
+function DNAtoRNA(dna) {
+	return dna.replaceAll("T", "U");
+}
+console.log(DNAtoRNA("GCAT"));
 // ---ПОГЛИБЛЕНІ ЗАДАЧІ---
 // 1. https://www.codewars.com/kata/577a98a6ae28071780000989/train/javascript
 
