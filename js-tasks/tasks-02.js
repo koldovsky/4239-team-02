@@ -100,6 +100,12 @@ function getRealFloor(n) {
   return n - 1;
 }
 
+// -- Iryna Zhmailo --
+function getRealFloor(n) {
+	if (n <= 0) return n;
+	if (n < 13) return n - 1;
+	return n - 2;
+}
 // 5. https://www.codewars.com/kata/55f9bca8ecaa9eac7100004a/train/javascript
 
 // -- Anna Snitko --
