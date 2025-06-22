@@ -102,9 +102,9 @@ function getRealFloor(n) {
 
 // -- Iryna Zhmailo --
 function getRealFloor(n) {
-	if (n <= 0) return n;
-	if (n < 13) return n - 1;
-	return n - 2;
+  if (n <= 0) return n;
+  if (n < 13) return n - 1;
+  return n - 2;
 }
 // 5. https://www.codewars.com/kata/55f9bca8ecaa9eac7100004a/train/javascript
 
@@ -129,6 +129,6 @@ function isDivisible(n, x, y) {
 
 // -- Iryna Zhmailo --
 function isDivisible(n, x, y) {
- if (n % x === 0 && n % y === 0) return true;
- return false;
+  if (n % x === 0 && n % y === 0) return true;
+  return false;
 }
