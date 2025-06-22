@@ -48,6 +48,15 @@ function min(arr, toReturn) {
   return toReturn === 'value' ? minValue : arr.indexOf(minValue);
 }
 
+// -- Iryna Zhmailo --
+function min(arr, toReturn) {
+	const smallest = Math.min(...arr);
+	if (toReturn === "value") {
+		return smallest;
+	} else {
+		return arr.indexOf(smallest);
+	}
+}
 // ---ДОДАТКОВІ ЗАДАЧІ---
 // 1. https://www.codewars.com/kata/53ee5429ba190077850011d4/train/javascript
 
