@@ -113,6 +113,13 @@ function past(h, m, s){
   return ((h * 3600) + (m * 60) + s) * 1000;
 }
 
+// -- Iryna Zhmailo --
+function past(h, m, s) {
+  if (h < 0 || h > 23) return 0;
+  if (m < 0 || m > 59) return 0;
+  if (s < 0 || s > 59) return 0;
+  return (s + m * 60 + h * 3600) * 1000;
+}
 // 6. https://www.codewars.com/kata/5545f109004975ea66000086/train/javascript
 
 // -- Anna Snitko --
