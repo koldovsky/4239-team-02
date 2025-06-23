@@ -57,6 +57,7 @@ function min(arr, toReturn) {
   return arr.indexOf(smallest);
  }
 }
+
 // ---ДОДАТКОВІ ЗАДАЧІ---
 // 1. https://www.codewars.com/kata/53ee5429ba190077850011d4/train/javascript
 
@@ -69,6 +70,7 @@ function doubleInteger(i) {
 function doubleInteger(i) {
  return i * 2;
 }
+
 // 2. https://www.codewars.com/kata/5b853229cfde412a470000d0/train/javascript
 
 // -- Anna Snitko --
@@ -80,6 +82,7 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
 function twiceAsOld(dadYearsOld, sonYearsOld) {
  return Math.abs(dadYearsOld - 2 * sonYearsOld)
 }
+
 // 3. https://www.codewars.com/kata/5933a1f8552bc2750a0000ed/train/javascript
 
 // -- Anna Snitko --
@@ -91,6 +94,7 @@ function nthEven(n){
 function nthEven(n){
   return (n - 1) * 2;
 }
+
 // 4. https://www.codewars.com/kata/574b3b1599d8f897470018f6/train/javascript
 
 // -- Anna Snitko --
@@ -106,6 +110,7 @@ function getRealFloor(n) {
   if (n < 13) return n - 1;
   return n - 2;
 }
+
 // 5. https://www.codewars.com/kata/55f9bca8ecaa9eac7100004a/train/javascript
 
 // -- Anna Snitko --
@@ -120,6 +125,7 @@ function past(h, m, s) {
   if (s < 0 || s > 59) return 0;
   return (s + m * 60 + h * 3600) * 1000;
 }
+
 // 6. https://www.codewars.com/kata/5545f109004975ea66000086/train/javascript
 
 // -- Anna Snitko --
