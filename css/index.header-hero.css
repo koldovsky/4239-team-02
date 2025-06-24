@@ -56,8 +56,8 @@
 }
 
 .hero__button--filled {
-  background-color: #b15e34;
-  color: white;
+  background-color: var(--color-accent);
+  color: var(--color-text-primary);
   border: none;
 }
 
@@ -67,8 +67,8 @@
 
 .hero__button--outlined {
   background-color: transparent;
-  color: white;
-  border: 2px solid white;
+  color: var(--color-text-primary);
+  border: 2px solid var(--color-text-primary);
 }
 
 .hero__button--outlined:hover {
