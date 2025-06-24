@@ -1,35 +1,101 @@
 .hero {
-    padding-top: 110px;
-    padding-bottom: 130px;
-
-    .hero__content {
-        display: flex;
-        margin-top: 50px;
-        padding-left: 15px;
-        padding-right: 15px;
-        text-align: left;
-
-        .hero__subtitle {
-            font-family: var(--font-accent);
-            color: var(--color-accent);
-            font-size: 0.875rem;
-            font-weight: normal;
-        }
-
-        .hero__title {
-            font-family: var(--font-title);
-            color: var(--color-text-primary);
-            font-size: 3.625rem;
-            font-weight: normal;
-        }
-
-        .hero__decoration {
-            width: 272px;
-        }
-
-        .hero__description {
-            color: var(--color-text-primary);
-            font-size: 1.125rem;
-        }
-    }
+  padding-top: 110px;
+  padding-bottom: 130px;
 }
+
+.hero__content {
+  margin-top: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: left;
+}
+
+.hero__subtitle {
+  font-family: var(--font-accent);
+  color: var(--color-accent);
+  font-size: 0.875rem;
+  font-weight: normal;
+}
+
+.hero__title {
+  font-family: var(--font-title);
+  color: var(--color-text-primary);
+  font-size: 3.625rem;
+  font-weight: normal;
+  margin-top: 20px;
+}
+
+.hero__decoration {
+  width: 272px;
+  margin-top: 35px;
+}
+
+.hero__description {
+  color: var(--color-text-primary);
+  font-size: 1.125rem;
+  margin-top: 20px;
+  line-height: 2;
+}
+
+.hero__buttons {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.hero__button {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 24px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 2px;
+  transition: 0.3s ease;
+}
+
+.hero__button--filled {
+  background-color: #b15e34;
+  color: white;
+  border: none;
+}
+
+.hero__button--filled:hover {
+  opacity: 0.9;
+}
+
+.hero__button--outlined {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.hero__button--outlined:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (min-width: 768px) {
+    .hero {
+        padding-left: 45%;
+    }
+
+    .hero__subtitle {
+        font-size: 1.3125rem;
+    }
+    
+    .hero__buttons {
+        flex-direction: row;
+    }
+  }
+
+  @media (min-width: 992px) {
+
+    .hero__subtitle {
+        font-size: 1.75rem;
+    }
+
+    .hero__title {
+        font-size: 5.25rem;
+    }
+  }
