@@ -16,7 +16,6 @@
 
 .cart__header {
 	background-color: var(--color-shopping-cart);
-	
 	display: flex;
 	position: relative;
 	height: auto;
@@ -66,14 +65,16 @@
 	display: flex;
 	align-items: center;
 
-	.cart__product-image {}
+	.cart__product-remove {
+		border: none;
+		background-color: white;
+	}
 
 	.cart__product-info {
 		display: flex;
 		padding: 0 20px 0 30px;
-		flex-direction: row;
+		flex-direction: column;
 		justify-content: flex-start;
-		align-items: center;
 		flex: 1;
 		padding-right: 8px;
 		align-items: flex-start;
@@ -96,14 +97,22 @@
 
 	.cart__product-info span {
 		display: flex;
-		align-items: center;
+		flex-direction: column;
+		gap: 5px;
 		margin-left: auto;
 		width: 100%;
-		justify-content: flex-end;
+		justify-content: flex-start;
+
+		@media (min-width: 768px) {
+			flex-direction: row-reverse;
+		}
 	}
 
 	.cart__product-price {
-		margin-left: 24px;
+		@media (min-width: 768px) {
+			margin-left: 65px;
+			margin-right: 10px;
+		}
 	}
 }
 
@@ -111,11 +120,11 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	    margin-bottom: 24px;
-    margin-top: 24px;
-	/* flex-flow: row wrap; */
+	margin-bottom: 24px;
+	margin-top: 24px;
+
 	.cart__promo-link {
-		    color: inherit;
+		color: inherit;
 	}
 }
 
@@ -140,10 +149,16 @@
 	font-weight: 700;
 }
 
-.cart__label {
-	.cart__label span {
-		color: var(--color-cart-label);
-	}
+.cart__product-quantity input {
+	width: 80px;
+	padding: 0;
+	flex: 1;
+	background: transparent;
+	border: 1px solid var(--color-shopping-input);
+	padding: 6px 5px 6px 6px;
+	line-height: 1.2;
+	font-size: 15px;
+	border-radius: 2px;
 }
 
 .cart__input,
@@ -159,9 +174,25 @@
 	width: 100%;
 }
 
-.cart__order {
-	.cart__order-button {
-		font-weight: normal;
-		border-radius: 2px;
-	}
+.cart__label span {
+	color: var(--color-cart-label);
+}
+
+.cart__form-order {
+	display: flex;
+	justify-content: center;
+}
+
+.cart__form-order a {
+	text-decoration: none;
+}
+
+.cart__form-button {
+	font-weight: normal;
+	font-size: calc(15px * 1.1);
+	border-radius: 2px;
+	border: none;
+	padding: 18px 26px 18px 26px;
+	display: flex;
+	justify-content: center;
 }
