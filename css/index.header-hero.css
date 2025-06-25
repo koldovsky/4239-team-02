@@ -38,11 +38,11 @@
 }
 
 .hero__buttons {
-    padding-top: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: flex-start;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
 }
 
 .hero__button {
@@ -76,26 +76,26 @@
 }
 
 @media (min-width: 768px) {
-    .hero {
-        padding-left: 45%;
-    }
-
-    .hero__subtitle {
-        font-size: 1.3125rem;
-    }
-    
-    .hero__buttons {
-        flex-direction: row;
-    }
+  .hero {
+    padding-left: 45%;
   }
 
-  @media (min-width: 992px) {
-
-    .hero__subtitle {
-        font-size: 1.75rem;
-    }
-
-    .hero__title {
-        font-size: 5.25rem;
-    }
+  .hero__subtitle {
+    font-size: 1.3125rem;
   }
+
+  .hero__buttons {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .hero__subtitle {
+    font-size: 1.75rem;
+  }
+
+  .hero__title {
+    font-size: 5.25rem;
+  }
+}

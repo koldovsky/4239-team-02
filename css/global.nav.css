@@ -47,15 +47,17 @@
 .header__burger-line:nth-child(1) {
   transform: translateY(-8px);
 }
+
 .header__burger-line:nth-child(2) {
   transform: translateY(0);
 }
+
 .header__burger-line:nth-child(3) {
   transform: translateY(8px);
 }
 
-.header-nav__menu-list, 
-.header-nav__social-list{
+.header-nav__menu-list,
+.header-nav__social-list {
   justify-content: end;
   display: flex;
   list-style: none;
@@ -109,11 +111,11 @@
 }
 
 .header__burger {
-    display: flex;
-    z-index: 101;
-    align-items: center;
-    height: auto;
-  }
+  display: flex;
+  z-index: 101;
+  align-items: center;
+  height: auto;
+}
 
 .header-nav__panel {
   display: none;
@@ -136,8 +138,8 @@
 }
 
 .no-scroll {
-  margin: 0; 
-  height: 100%; 
+  margin: 0;
+  height: 100%;
   overflow: hidden;
   z-index: 99;
 }
@@ -149,7 +151,7 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   gap: 20px;
 }
 
@@ -162,38 +164,38 @@
 }
 
 .header-nav {
-    width: 100%;
-    padding: 30px 40px;
-    display: block;
-  }
+  width: 100%;
+  padding: 30px 40px;
+  display: block;
+}
 
-  .header-nav__content {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-  }
+.header-nav__content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
 
-  .header__nav.is-open {
-    height: calc(100vh - var(--header-height));
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
+.header__nav.is-open {
+  height: calc(100vh - var(--header-height));
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-  .header__nav.is-open .header__menu {
-    opacity: 1;
-  }
+.header__nav.is-open .header__menu {
+  opacity: 1;
+}
 
-  .header__burger.is-active .header__burger-line:nth-child(1) {
-    transform: translateY(0) rotate(45deg);
-  }
+.header__burger.is-active .header__burger-line:nth-child(1) {
+  transform: translateY(0) rotate(45deg);
+}
 
-  .header__burger.is-active .header__burger-line:nth-child(2) {
-    opacity: 0;
-  }
+.header__burger.is-active .header__burger-line:nth-child(2) {
+  opacity: 0;
+}
 
-  .header__burger.is-active .header__burger-line:nth-child(3) {
-    transform: translateY(0) rotate(-45deg);
-  }
+.header__burger.is-active .header__burger-line:nth-child(3) {
+  transform: translateY(0) rotate(-45deg);
+}
 
 @media (min-width: 992px) {
   .header__burger {
@@ -218,12 +220,12 @@
   }
 
   .header-nav__panel {
-  width: 100%;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  gap: 1.5rem;
-}
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1.5rem;
+  }
 
   .header-nav__menu {
     width: 100%;

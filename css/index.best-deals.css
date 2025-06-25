@@ -1,55 +1,184 @@
-/* in progress*/
-
 .best-deals {
     background-color: var(--color-background-primary);
-    padding-left: 24px;
-    padding-right: 24px;
+    padding: 90px 0px 50px;
+    width: 100%;
+}
 
-    .best-deals__title{
-        font-family: var(--font-accent);
-        color: var(--color-accent);
-        font-size: 14px;
-        font-weight: normal;
-        text-align: center;
+.best-deals__title {
+    font-family: var(--font-accent);
+    color: var(--color-accent);
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    padding: 0px 24px;
+}
+
+.best-deals__subtitle {
+    font-family: var(--font-title);
+    color: var(--color-text-primary);
+    font-size: 34px;
+    font-weight: normal;
+    text-align: center;
+    padding: 0px 24px;
+    padding-top: 30px;
+}
+
+.best-deals__decoration {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0px 24px;
+    padding-top: 30px;
+}
+
+.best-deals__description {
+    color: var(--color-text-primary);
+    font-size: 18px;
+    text-align: center;
+    padding: 0px 24px;
+    padding-top: 30px;
+}
+
+.best-deals__product-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding-top: 50px;
+}
+
+.best-deals__carousel {
+    position: relative;
+    width: 90%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.best-deals__products {
+    max-width: 100%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.best-deals__product-card {
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    flex: 0 0 100%;
+}
+
+.best-deals__product-title {
+    color: var(--color-text-primary);
+    font-size: 18px;
+    text-align: center;
+    padding-top: 16px;
+}
+
+.best-deals__product-price {
+    color: var(--color-text-primary);
+    font-size: 20px;
+    text-align: center;
+    padding-top: 16px;
+}
+
+.button--block {
+    display: flex;
+    justify-content: center;
+    padding-top: 24px;
+}
+
+.button {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 24px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 2px;
+    transition: 0.3s ease;
+}
+
+.button--filled {
+    background-color: var(--color-accent);
+    color: var(--color-text-primary);
+    border: none;
+}
+
+.best-deals__arrow {
+    position: absolute;
+    display: block;
+    top: 50%;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--color-text-primary);
+    color: var(--color-input-background);
+    border: none;
+    font-size: 10px;
+    cursor: pointer;
+    z-index: 1;
+    transition: background 0.3s;
+    padding: 7px;
+}
+
+.best-deals__arrow.best-deals__arrow--left {
+    left: 0;
+    transform: scaleX(-1);
+}
+
+.best-deals__arrow.best-deals__arrow--right {
+    right: 10px;
+}
+
+.best-deals__dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.best-deals__dot {
+    width: 10px;
+    height: 10px;
+    background-color: var(--color-text-secondary);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.best-deals__dot.active {
+    background-color: var(--color-accent);
+}
+
+
+@media (min-width: 768px) {
+    .best-deals {
+        padding: 100px 32px 50px;
+    }
+
+    .best-deals__title {
+        font-size: 21px;
     }
 
     .best-deals__subtitle {
-        font-family: var(--font-title);
-        color: var(--color-text-primary);
-        font-size: 34px;
-        font-weight: normal;
-        text-align: center;
+        font-size: 41px;
     }
 
-    .best-deals__decoration {
-        display: block;
-        margin: 0 auto;
+    .best-deals__product-card {
+        flex: 0 0 50%;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .best-deals__title {
+        font-size: 28px;
     }
 
-    .best-deals__description {
-        color: var(--color-text-primary);
-        font-size: 18px;
-        text-align: center;
+    .best-deals__subtitle {
+        font-size: 48px;
     }
 
-    .best-deals__carousel {
-        padding-left: 15px;
-        padding-right: 15px;
-        display: grid;
-
-        .best-deals__products {
-            
-            .best-deals__product-title {
-                color: var(--color-text-primary);
-                font-size: 18px;
-                text-align: center;
-            }
-
-            .best-deals__product-price {
-                color: var(--color-text-primary);
-                font-size: 20px;
-                text-align: center;
-            }
-        }
+    .best-deals__product-card {
+        flex: 0 0 33%;
     }
 }

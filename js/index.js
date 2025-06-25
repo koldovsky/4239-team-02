@@ -1,5 +1,9 @@
 function init() {
+  // Anna Snitko - Block 1
   import("./global.header-burger.js");
+
+  // Anna Snitko - Block 4
+  import("./index.best-deals-carousel.js");
 }
 
 const totalPartials = document.querySelectorAll(
