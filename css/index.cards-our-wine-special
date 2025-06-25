@@ -1,167 +1,132 @@
 .features-section {
-  background-color: #261e1c;
-  color: #ffffff;
+  background-color: #f8f5f2; 
+  color: #261e1c; 
+  padding: 80px 0;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
 }
 
 .features-section__subtitle {
-  color: #c8693a;
-  font-style: italic;
-  font-size: 1rem;
-  text-align: center;
-  margin-bottom: 8px;
+  color: #c8693a; 
   font-family: "Great Vibes", cursive;
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  font-weight: 400;
 }
 
 .features-section__title {
-  font-size: 2rem;
   font-family: "Prata", serif;
-  text-align: center;
+  font-size: 2.5rem;
   margin-bottom: 20px;
+  color: #261e1c;
+  line-height: 1.2;
 }
 
 .features-image {
   display: block;
-  margin: 0 auto 20px;
-  max-width: 80px;
+  margin: 0 auto 30px;
+  max-width: 100px;
   height: auto;
 }
 
 .features-section__description {
-  text-align: center;
-  font-weight: bold;
-  font-size: 1rem;
-  color: #ffffff;
-  margin-bottom: 40px;
-}
-
-.features-section__image-wrapper {
-  flex: 1;
-}
-
-.features-section__image {
-  width: 100%;
-  height: auto;
+  font-size: 1.1rem;
+  color: #5a5a5a; 
+  max-width: 600px;
+  margin: 0 auto 50px;
+  line-height: 1.6;
 }
 
 .features-section__content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   gap: 40px;
-  align-items: flex-start;
+}
+
+.features-section__image-wrapper {
+  margin-bottom: 30px;
+}
+
+.features-section__image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .features-section__grid {
-  flex: 2;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px 40px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Стилі для карток */
+.features-section__item {
+  padding: 30px 25px;
+  background: #ffffff; 
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.features-section__item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 .features-section__item-title {
   font-family: "Prata", serif;
-  font-size: 1rem;
-  font-weight: bold;
-  margin-bottom: 5px;
-  color: #ffffff;
-}
-
-.features-section__item-text {
-  font-size: 0.95rem;
-  color: #898082;
-}
-
-/* Wine cards */
-
-#wine-cards {
-  background-color: #261e1c;
-  padding: 40px 0;
-}
-
-#wine-cards .container {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
-.wine-cards__card {
-  width: 397px;
-  height: 352px;
-  background-size: cover;
-  background-position: center top;
-  position: relative;
-  border-radius: 8px;
-  display: flex;
-  align-items: flex-end;
-  overflow: hidden;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
-  flex-shrink: 0;
-  z-index: 0;
-}
-
-.wine-cards__card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.1));
-  z-index: 1;
-}
-
-.wine-cards__content {
-  padding: 20px;
-  z-index: 2;
-  position: relative;
-}
-
-.wine-cards__title {
-  font-size: 1.5rem;
-  font-family: "Prata", serif;
-  margin-bottom: 10px;
-  color: #ffffff;
-}
-
-.wine-cards__description {
-  font-size: 1rem;
-  color: #898082;
+  font-size: 1.25rem;
+  color: #261e1c; 
   margin-bottom: 15px;
 }
 
-.wine-cards__link {
+.features-section__item-text {
+  color: #5a5a5a; 
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* "Learn More" */
+.features-section__link {
+  color: #c8693a; 
   text-decoration: none;
   font-weight: bold;
-  color: #ffffff;
-  border-bottom: 1px solid #c8693a;
-  padding-bottom: 2px;
-  transition: all 0.3s ease;
+  display: inline-block;
+  margin-top: 15px;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s;
 }
 
-.wine-cards__link:hover {
-  color: #c8693a;
-  border-color: #ffffff;
+.features-section__link:hover {
+  border-bottom-color: #c8693a;
 }
 
-/* Mobile */
-
-@media (max-width: 767px) {
-  .features-section__content {
-    flex-direction: column;
+/* ===== mobile ===== */
+@media (max-width: 576px) {
+  .features-section {
+    padding: 60px 0;
   }
-
+  
   .features-section__grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; 
+    gap: 20px;
   }
-
+  
   .features-section__title {
-    font-size: 1.5rem;
-    white-space: normal;
+    font-size: 2rem;
   }
-
-  .wine-cards__card {
-    width: 90vw;
+  
+  .features-section__subtitle {
+    font-size: 1.3rem;
+  }
+  
+  .features-section__item {
+    padding: 25px 20px;
   }
 }
