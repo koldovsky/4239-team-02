@@ -1,20 +1,20 @@
 .features-section {
-  background-color: var(--color-background-primary);
-  color: var(--color-text-primary);
+  background-color: #261e1c;
+  color: #ffffff;
 }
 
 .features-section__subtitle {
-  color: var(--color-accent);
+  color: #c8693a;
   font-style: italic;
   font-size: 1rem;
   text-align: center;
   margin-bottom: 8px;
-  font-family: var(--font-accent);
+  font-family: "Great Vibes", cursive;
 }
 
 .features-section__title {
   font-size: 2rem;
-  font-family: var(--font-title);
+  font-family: "Prata", serif;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -30,7 +30,7 @@
   text-align: center;
   font-weight: bold;
   font-size: 1rem;
-  color: var(--color-text-primary);
+  color: #ffffff;
   margin-bottom: 40px;
 }
 
@@ -58,25 +58,32 @@
 }
 
 .features-section__item-title {
-  font-family: var(--font-title);
+  font-family: "Prata", serif;
   font-size: 1rem;
   font-weight: bold;
   margin-bottom: 5px;
-  color: var(--color-text-primary);
+  color: #ffffff;
 }
 
 .features-section__item-text {
   font-size: 0.95rem;
-  color: var(--color-text-secondary);
+  color: #898082;
 }
 
 /* Wine cards */
 
 #wine-cards {
-  background-color: var(--color-background-primary);
+  background-color: #261e1c;
+  padding: 40px 0;
+}
+
+#wine-cards .container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: nowrap;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  padding: 40px 0;
 }
 
 .wine-cards__card {
@@ -91,16 +98,17 @@
   overflow: hidden;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
   flex-shrink: 0;
+  z-index: 0;
 }
 
 .wine-cards__card::before {
   content: "";
-  position: absolute; /* 🔥 обовʼязково */
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0,0,0,0.1));
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.1));
   z-index: 1;
 }
 
@@ -112,32 +120,32 @@
 
 .wine-cards__title {
   font-size: 1.5rem;
-  font-family: var(--font-title);
+  font-family: "Prata", serif;
   margin-bottom: 10px;
-  color: var(--color-text-primary);
+  color: #ffffff;
 }
 
 .wine-cards__description {
   font-size: 1rem;
-  color: var(--color-text-secondary);
+  color: #898082;
   margin-bottom: 15px;
 }
 
 .wine-cards__link {
   text-decoration: none;
   font-weight: bold;
-  color: var(--color-text-primary);
-  border-bottom: 1px solid var(--color-accent);
+  color: #ffffff;
+  border-bottom: 1px solid #c8693a;
   padding-bottom: 2px;
   transition: all 0.3s ease;
 }
 
 .wine-cards__link:hover {
-  color: var(--color-accent);
-  border-color: var(--color-text-primary);
+  color: #c8693a;
+  border-color: #ffffff;
 }
 
-/* Media */
+/* Mobile */
 
 @media (max-width: 767px) {
   .features-section__content {
