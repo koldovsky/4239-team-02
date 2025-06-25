@@ -1,7 +1,6 @@
 .best-deals {
     background-color: var(--color-background-primary);
     padding: 90px 0px 50px;
-    width: 100%;
 }
 
 .best-deals__title {
@@ -152,7 +151,7 @@
 
 @media (min-width: 768px) {
     .best-deals {
-        padding: 100px 32px 50px;
+        padding: 100px 0px 50px;
     }
 
     .best-deals__title {
