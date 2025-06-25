@@ -1,176 +1,132 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Georgia;
-  background-color: #261e1c;
-  color: white;
-}
-
-/* Секція */
-
 .features-section {
-  padding: 20px;
-  
+  background-color: #f8f5f2; 
+  color: #261e1c; 
+  padding: 80px 0;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
 }
 
 .features-section__subtitle {
-  color: #c8693a;
-  font-style: italic;
-  font-size: 19px;
+  color: #c8693a; 
+  font-family: "Great Vibes", cursive;
+  font-size: 1.5rem;
   margin-bottom: 8px;
-  text-align: center;
+  font-weight: 400;
 }
 
 .features-section__title {
-  font-size: 29px;
-  margin-bottom: 10px;
-  font-weight: bold;
-  text-align: center;
+  font-family: "Prata", serif;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #261e1c;
+  line-height: 1.2;
 }
 
 .features-image {
   display: block;
-  margin: 0 auto 20px; 
+  margin: 0 auto 30px;
   max-width: 100px;
   height: auto;
 }
 
 .features-section__description {
-  font-weight: bold;
-  margin-bottom: 20px;
-  font-size: 16px;
-  text-align: center;
+  font-size: 1.1rem;
+  color: #5a5a5a; 
+  max-width: 600px;
+  margin: 0 auto 50px;
+  line-height: 1.6;
+}
+
+.features-section__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.features-section__image-wrapper {
+  margin-bottom: 30px;
 }
 
 .features-section__image {
-  width: 352px;
-  height: 528px;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
   display: block;
+  margin: 0 auto;
 }
 
 .features-section__grid {
   display: grid;
-  gap: 20px 40px;
-  grid-template-columns: 1fr 1fr;
-  flex: 2;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-.features-section__item-text {
-  font-size: 0.95rem;
-  color: #898082;
-}
-
-/* Карточки вина */
-
-#wine-cards {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 0px 15px;
-  background-color: #261e1c;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
-.wine-cards__card {
-  width: 397px;
-  height: 352px;
-  background-size: cover;
-  background-position: center top;
-  position: relative;
+/* Стилі для карток */
+.features-section__item {
+  padding: 30px 25px;
+  background: #ffffff; 
   border-radius: 8px;
-  display: flex;
-  align-items: flex-end;
-  overflow: hidden;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
-  flex-shrink: 0;
-  margin: 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  text-align: center;
 }
 
-.wine-cards__card::before {
-  content: "";
-  inset: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0,0,0,0.1));
-  z-index: 1;
+.features-section__item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-.wine-cards__content {
-  padding: 20px;
-  z-index: 2;
-  color: white;
-}
-
-.wine-cards__title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.wine-cards__description {
-  font-size: 1rem;
-  color: #898082;
+.features-section__item-title {
+  font-family: "Prata", serif;
+  font-size: 1.25rem;
+  color: #261e1c; 
   margin-bottom: 15px;
 }
 
-.wine-cards__link {
+.features-section__item-text {
+  color: #5a5a5a; 
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* "Learn More" */
+.features-section__link {
+  color: #c8693a; 
   text-decoration: none;
   font-weight: bold;
-  color: white;
-  border-bottom: 1px solid #c28254;
-  transition: all 0.3s ease;
   display: inline-block;
-  padding-bottom: 2px;
+  margin-top: 15px;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s;
 }
 
-.wine-cards__link:hover {
-  color: #c28254;
-  border-color: white;
+.features-section__link:hover {
+  border-bottom-color: #c8693a;
 }
 
-/* Desctop */
-
-@media (min-width: 768px) {
+/* ===== mobile ===== */
+@media (max-width: 576px) {
   .features-section {
-    padding: 60px;
-    text-align: left;
+    padding: 60px 0;
   }
-
-  .features-section__content {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-    align-items: flex-start;
+  
+  .features-section__grid {
+    grid-template-columns: 1fr; 
+    gap: 20px;
   }
-
-  .features-section__image-wrapper {
-    flex: 1;
-    margin: 0;
-  }
-}
-
-/* Mobile */
-@media (max-width: 767px) {
+  
   .features-section__title {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 100%;
+    font-size: 2rem;
   }
   
-  .features-section__description {
-    font-size: 1rem;
-    line-height: 1.4;
-    margin-bottom: 25px;
+  .features-section__subtitle {
+    font-size: 1.3rem;
   }
   
-  .wine-cards__title {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  
-  .wine-cards__link::after {
-    content: " →";
+  .features-section__item {
+    padding: 25px 20px;
   }
 }
