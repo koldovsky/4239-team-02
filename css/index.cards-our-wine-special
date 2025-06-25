@@ -1,68 +1,82 @@
-/* Секція */
-
 .features-section {
-  padding: 20px;
-  
+  background-color: var(--color-background-primary);
+  color: var(--color-text-primary);
 }
 
 .features-section__subtitle {
-  color: #c8693a;
+  color: var(--color-accent);
   font-style: italic;
-  font-size: 19px;
-  margin-bottom: 8px;
+  font-size: 1rem;
   text-align: center;
+  margin-bottom: 8px;
+  font-family: var(--font-accent);
 }
 
 .features-section__title {
-  font-size: 29px;
-  margin-bottom: 10px;
-  font-weight: bold;
+  font-size: 2rem;
+  font-family: var(--font-title);
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .features-image {
   display: block;
-  margin: 0 auto 20px; 
-  max-width: 100px;
+  margin: 0 auto 20px;
+  max-width: 80px;
   height: auto;
 }
 
 .features-section__description {
-  font-weight: bold;
-  margin-bottom: 20px;
-  font-size: 16px;
   text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+  color: var(--color-text-primary);
+  margin-bottom: 40px;
+}
+
+.features-section__image-wrapper {
+  flex: 1;
 }
 
 .features-section__image {
-  width: 352px;
-  height: 528px;
-  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.features-section__content {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: flex-start;
 }
 
 .features-section__grid {
-  display: grid;
-  gap: 20px 40px;
-  grid-template-columns: 1fr 1fr;
   flex: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px 40px;
+}
+
+.features-section__item-title {
+  font-family: var(--font-title);
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: var(--color-text-primary);
 }
 
 .features-section__item-text {
   font-size: 0.95rem;
-  color: #898082;
+  color: var(--color-text-secondary);
 }
 
-/* Карточки вина */
+/* Wine cards */
 
 #wine-cards {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 0px 15px;
-  background-color: #261e1c;
+  background-color: var(--color-background-primary);
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+  padding: 40px 0;
 }
 
 .wine-cards__card {
@@ -77,12 +91,15 @@
   overflow: hidden;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
   flex-shrink: 0;
-  margin: 0;
 }
 
 .wine-cards__card::before {
   content: "";
-  inset: 0;
+  position: absolute; /* 🔥 обовʼязково */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0,0,0,0.1));
   z-index: 1;
 }
@@ -90,79 +107,53 @@
 .wine-cards__content {
   padding: 20px;
   z-index: 2;
-  color: white;
+  position: relative;
 }
 
 .wine-cards__title {
   font-size: 1.5rem;
-  font-weight: bold;
+  font-family: var(--font-title);
   margin-bottom: 10px;
+  color: var(--color-text-primary);
 }
 
 .wine-cards__description {
   font-size: 1rem;
-  color: #898082;
+  color: var(--color-text-secondary);
   margin-bottom: 15px;
 }
 
 .wine-cards__link {
   text-decoration: none;
   font-weight: bold;
-  color: white;
-  border-bottom: 1px solid #c28254;
-  transition: all 0.3s ease;
-  display: inline-block;
+  color: var(--color-text-primary);
+  border-bottom: 1px solid var(--color-accent);
   padding-bottom: 2px;
+  transition: all 0.3s ease;
 }
 
 .wine-cards__link:hover {
-  color: #c28254;
-  border-color: white;
+  color: var(--color-accent);
+  border-color: var(--color-text-primary);
 }
 
-/* Desctop */
+/* Media */
 
-@media (min-width: 768px) {
-  .features-section {
-    padding: 60px;
-    text-align: left;
-  }
-
-  .features-section__content {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-    align-items: flex-start;
-  }
-
-  .features-section__image-wrapper {
-    flex: 1;
-    margin: 0;
-  }
-}
-
-/* Mobile */
 @media (max-width: 767px) {
+  .features-section__content {
+    flex-direction: column;
+  }
+
+  .features-section__grid {
+    grid-template-columns: 1fr;
+  }
+
   .features-section__title {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 100%;
+    font-size: 1.5rem;
+    white-space: normal;
   }
-  
-  .features-section__description {
-    font-size: 1rem;
-    line-height: 1.4;
-    margin-bottom: 25px;
-  }
-  
-  .wine-cards__title {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  
-  .wine-cards__link::after {
-    content: " →";
+
+  .wine-cards__card {
+    width: 90vw;
   }
 }
