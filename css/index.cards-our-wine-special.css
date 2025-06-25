@@ -1,0 +1,224 @@
+/* === Wine Cards === */
+.wine-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.wine-cards__card {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  min-height: 460px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  color: var(--color-text-primary);
+  background-color: var(--color-background-primary);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.wine-cards__card:hover {
+  transform: translateY(-5px);
+}
+
+.wine-cards__card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.05));
+  z-index: 0;
+}
+
+.wine-cards__content {
+  position: relative;
+  padding: 30px;
+  z-index: 1;
+}
+
+.wine-cards__title {
+  font-family: var(--font-title);
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.wine-cards__description {
+  color: var(--color-text-secondary);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.wine-cards__link {
+  color: var(--color-accent);
+  font-weight: bold;
+  margin-top: 15px;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.wine-cards__link:hover {
+  border-bottom: 1px solid var(--color-accent);
+}
+
+/* === Features === */
+.features-section {
+  background-color: var(--color-background-primary);
+  color: var(--color-text-primary);
+  padding: 80px 0;
+  font-family: var(--font-rubik);
+  text-align: center;
+}
+
+.features-section__subtitle {
+  color: var(--color-accent);
+  font-family: var(--font-accent);
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.features-section__title {
+  font-family: var(--font-title);
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  color: var(--color-text-primary);
+  line-height: 1.2;
+}
+
+.features-image {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 120px;
+  height: auto;
+}
+
+.features-section__description {
+  font-size: 1.1rem;
+  color: var(--color-text-secondary);
+  max-width: 600px;
+  margin: 0 auto 50px;
+  line-height: 1.6;
+}
+
+.features-section__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  text-align: center;
+}
+
+.features-section__image-wrapper {
+  margin-bottom: 30px;
+}
+
+.features-section__image {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .features-section__content {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .features-section__image-wrapper {
+    flex: 1;
+    max-width: 40%;
+  }
+
+  .features-section__grid {
+    flex: 2;
+    max-width: 660px;
+  }
+}
+
+.features-section__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.features-section__item {
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+  text-align: left;
+}
+
+.features-section__item-title {
+  font-family: var(--font-title);
+  font-size: 1.2rem;
+  color: var(--color-text-primary);
+  margin-bottom: 8px;
+}
+
+.features-section__item-text {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+/* === Mobile === */
+@media (max-width: 768px) {
+  .wine-cards__card {
+    min-height: 320px;
+  }
+
+  .wine-cards__title {
+    font-size: 1.3rem;
+  }
+
+  .wine-cards__description {
+    font-size: 0.95rem;
+  }
+
+  .features-section {
+    padding: 60px 0;
+  }
+
+  .features-section__title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .features-section__subtitle {
+    font-size: 1.3rem;
+  }
+
+  .features-section__content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .features-section__grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .features-section__item-title,
+  .features-section__item-text {
+    text-align: center;
+  }
+
+  .features-section__item {
+    padding: 0 10px;
+  }
+
+  .features-section__description {
+    font-size: 1rem;
+  }
+}
