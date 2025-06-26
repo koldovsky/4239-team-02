@@ -8,6 +8,7 @@
 }
 
 .wine-cards__card {
+  background-color: var(--color-background-primary);
   position: relative;
   background-size: cover;
   background-position: center;
