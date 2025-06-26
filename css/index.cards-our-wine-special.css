@@ -9,7 +9,7 @@
 
 .wine-cards__card {
 position: relative;
-  background-color: var(--color-background-primary); 
+  background-color: var(--color-background-primary);
   border-radius: 12px;
   min-height: 460px;
   display: flex;
@@ -20,6 +20,10 @@ position: relative;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   padding: 30px;
+}
+
+.wine-cards__content {
+  background-color: transparent;
 }
 
 .wine-cards__card:hover {
