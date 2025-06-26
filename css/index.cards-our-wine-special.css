@@ -7,11 +7,6 @@
   background-color: var(--color-background-primary);
 }
 
-.wine-cards--bg {
-  background-color: var(--color-background-primary);
-  min-height: 100vh;
-}
-
 .wine-cards__card {
 position: relative;
   background-color: var(--color-background-primary);
@@ -219,4 +214,12 @@ position: relative;
   .features-section__description {
     font-size: 1rem;
   }
+}
+
+.w-section {
+  padding-top: 110px;
+  padding-bottom: 110px;
+  background-color: var(--color-background-primary);
+  color: var(--color-text-primary);
+  width: 100%;
 }
