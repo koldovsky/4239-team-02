@@ -21,12 +21,21 @@
   text-align: center;
 }
 
-.testimonials__devider {
-  align-items: center;
+.testimonials__decoration {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
 }
 
-.testimonials__quote {
+.testimonials__description {
   font-size: 18px;
-  color: var(--color-text-secondary);
+  color: var(--color-text-primary);
+  font-family: var(--font-rubik);
   text-align: center;
+}
+
+.testimonials__feedback-quote {
+  font-size: 16px;
+  color: var(--color-text-secondary);
+  font-family: var(--font-rubik);
 }
