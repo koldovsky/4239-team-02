@@ -1,95 +1,98 @@
 <!-- Iryna Zhmailo - Block 17 -->
-<section class="cart">
-	<div class="cart__header">
-		<h2 class="cart__header-title">Shopping cart</h2>
-		<div class="cart__header-close">
-			<img src="img/shopping-cart/icon-close.svg" alt="close-icon" />
-		</div>
-	</div>
-
-	<div class="cart__body">
-		<h3 class="cart__body-title">Products</h3>
-
-		<div class="cart__product">
-			<div class="cart__product-image">
-				<img src="img/best-deals-carousel/products-carousel-sauvignon-blanc.jpg" alt="wine photo" width="46"
-					height="46" />
+<section class="cart" id="cart">
+	<div class="cart__content">
+		<div class="cart__header">
+			<h2 class="cart__header-title">Shopping cart</h2>
+			<div id="close-cart" class="cart__header-close">
+				<img src="img/shopping-cart/icon-close.svg" alt="close-icon" />
 			</div>
-			<div class="cart__product-info">
-				<div class="cart__product-name">
-					<a href="#" target="_blank" class="cart__product-link">Sauvignon Blanc</a>
+		</div>
+
+		<div class="cart__body">
+			<h3 class="cart__body-title">Products</h3>
+
+			<div class="cart__product">
+				<div class="cart__product-image">
+					<img src="img/best-deals-carousel/products-carousel-sauvignon-blanc.jpg" alt="wine photo" width="46"
+						height="46" />
 				</div>
-				<span>
-					<div class="cart__product-price">
-						<p>17,00USD</p>
+				<div class="cart__product-info">
+					<div class="cart__product-name">
+						<a href="#" target="_blank" class="cart__product-link">Sauvignon Blanc</a>
 					</div>
-					<div class="cart__product-quantity">
-						<input type="number" value="2" min="1" />
+					<span>
+						<div class="cart__product-price">
+							<p>17,00USD</p>
+						</div>
+						<div class="cart__product-quantity">
+							<input type="number" value="2" min="1" />
+						</div>
+					</span>
+				</div>
+				<button class="cart__product-remove">
+					<svg width="14" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M10 2h3.6c.2 0 .4.2.4.4v1.2c0 .2-.2.4-.4.4H.4C.2 4 0 3.9 0 3.6V2.4c0-.2.2-.4.4-.3h3.7V2L4.9.3c.1-.2.2-.3.4-.3h3.5c.1 0 .3.1.4.2l.8 1.7V2zM1.8 16.1c.1 1 1 1.9 2 1.9h6.3c1.1 0 1.9-.8 2-1.9l1-11.1H1l.8 11.1zM12 6l-.8 10.1c0 .5-.5.9-1 .9H3.8c-.5 0-1-.4-1-.9L2 6h10zM5 8.1h1v6H5v-6zm4 0H8v6h1v-6z"
+							fill="#9199AB"></path>
+					</svg>
+				</button>
+			</div>
+
+			<hr class="cart__divider" />
+
+			<div class="cart__promo">
+				<span>
+					<a href="#" class="cart__promo-link">
+						<p class="cart__promo-text">Promo code</p>
+					</a>
+					<div style="display: none" class="cart__promo-form">
+						<form class="cart__form">
+							<label for="code" class="cart__label"></label><br />
+							<input type="text" id="code" name="code" class="cart__input"
+								placeholder="Enter your code" />
+						</form>
+						<button type="button" class="cart__button">OK</button>
 					</div>
 				</span>
-			</div>
-			<button class="cart__product-remove">
-				<svg width="14" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path fill-rule="evenodd" clip-rule="evenodd"
-						d="M10 2h3.6c.2 0 .4.2.4.4v1.2c0 .2-.2.4-.4.4H.4C.2 4 0 3.9 0 3.6V2.4c0-.2.2-.4.4-.3h3.7V2L4.9.3c.1-.2.2-.3.4-.3h3.5c.1 0 .3.1.4.2l.8 1.7V2zM1.8 16.1c.1 1 1 1.9 2 1.9h6.3c1.1 0 1.9-.8 2-1.9l1-11.1H1l.8 11.1zM12 6l-.8 10.1c0 .5-.5.9-1 .9H3.8c-.5 0-1-.4-1-.9L2 6h10zM5 8.1h1v6H5v-6zm4 0H8v6h1v-6z"
-						fill="#9199AB"></path>
-				</svg>
-			</button>
-		</div>
 
-		<hr class="cart__divider" />
-
-		<div class="cart__promo">
-			<span>
-				<a href="#" class="cart__promo-link">
-					<p class="cart__promo-text">Promo code</p>
-				</a>
-				<div style="display: none" class="cart__promo-form">
-					<form class="cart__form">
-						<label for="code" class="cart__label"></label><br />
-						<input type="text" id="code" name="code" class="cart__input" placeholder="Enter your code" />
-					</form>
-					<button type="button" class="cart__button">OK</button>
+				<div class="cart__total">
+					<p>Total:: 17,00USD</p>
 				</div>
-			</span>
-
-			<div class="cart__total">
-				<p>Total:: 17,00USD</p>
 			</div>
-		</div>
-		<div class="cart__order">
-			<h3 class="cart__section-title">Place an order</h3>
-			<div class="cart__order-form">
-				<form action="#" method="post" class="cart__form">
-					<label for="name" class="cart__label">Name<span> *</span></label><br />
-					<input type="text" id="name" name="name" class="cart__input" placeholder="Your name"
-						required /><br /><br />
+			<div class="cart__order">
+				<h3 class="cart__section-title">Place an order</h3>
+				<div class="cart__order-form">
+					<form action="#" method="post" class="cart__form">
+						<label for="name" class="cart__label">Name<span> *</span></label><br />
+						<input type="text" id="name" name="name" class="cart__input" placeholder="Your name"
+							required /><br /><br />
 
-					<label for="email" class="cart__label">Email<span> *</span></label><br />
-					<input type="email" id="email" name="email" class="cart__input" placeholder="Your email"
-						required /><br /><br />
+						<label for="email" class="cart__label">Email<span> *</span></label><br />
+						<input type="email" id="email" name="email" class="cart__input" placeholder="Your email"
+							required /><br /><br />
 
-					<label for="phone" class="cart__label">Phone<span> *</span></label><br />
-					<input type="tel" id="phone" name="phone" class="cart__input" placeholder="Your phone"
-						required /><br /><br />
+						<label for="phone" class="cart__label">Phone<span> *</span></label><br />
+						<input type="tel" id="phone" name="phone" class="cart__input" placeholder="Your phone"
+							required /><br /><br />
 
-					<label for="comment" class="cart__label">Comment</label><br />
-					<textarea id="comment" name="comment" class="cart__textarea"
-						placeholder="Your comment"></textarea><br /><br />
-					<div class="cart__form-order">
-						<a href="https://koldovsky.github.io/4239-team-02/order-confirmation.html" target="_blank">
-							<button type="submit" class="cart__form-button btn">Order</button></a>
-					</div>
-				</form>
+						<label for="comment" class="cart__label">Comment</label><br />
+						<textarea id="comment" name="comment" class="cart__textarea"
+							placeholder="Your comment"></textarea><br /><br />
+						<div class="cart__form-order">
+							<a href="https://koldovsky.github.io/4239-team-02/order-confirmation.html" target="_blank">
+								<button type="submit" class="cart__form-button btn">Order</button></a>
+						</div>
+					</form>
+				</div>
 			</div>
-		</div>
-		
-		<div class="cart__empty" style="display: none">
-			<p>
-				Shopping cart is empty
-				<br />
-				Continue shopping to add product to your cart
-			</p>
+
+			<div class="cart__empty" style="display: none">
+				<p>
+					Shopping cart is empty
+					<br />
+					Continue shopping to add product to your cart
+				</p>
+			</div>
 		</div>
 	</div>
 </section>

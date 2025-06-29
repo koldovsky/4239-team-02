@@ -7,6 +7,14 @@ function init() {
 
   // Ryzhlov Oleksandr - Block 14
   import("./index.faq.partial.js");
+
+  // Iryna Zhmailo - Block 17 + order-confirmation block
+
+  import("./index.modal-cart-widget.js");
+
+  import("./index.modal-shopping-cart.js");
+
+  import("./index.order-confirmation.js");
 }
 
 
