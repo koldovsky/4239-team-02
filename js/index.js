@@ -5,7 +5,7 @@ function init() {
   // Anna Snitko - Block 4
   import("./index.best-deals-carousel.js");
 
-  // Ryzhlov Oleksandr - Block 14
+  // Ryzhlov Oleksandr - Block 13
   import("./index.faq.partial.js");
 
   // Iryna Zhmailo - Block 17 + order-confirmation block
