@@ -12,7 +12,7 @@ function init() {
 
   // import("./index.modal-cart-widget.js");
 
-  // import("./index.modal-shopping-cart.js");
+  import("./index.modal-shopping-cart.js");
 
   // import("./index.order-confirmation.js");
 }
