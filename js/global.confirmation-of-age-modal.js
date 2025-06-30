@@ -1,7 +1,10 @@
 (function initAgeModal() {
   const isHomePage = window.location.pathname === "/4239-team-02/";
 
-  if (!isHomePage) return;
+  if (!isHomePage) {
+    console.log("Not on homepage, age modal will not show."); 
+    return;
+  }
 
   const ageModal = document.getElementById("ageModal");
   const yesButton = document.querySelector(".age-confirmation__button--yes");
