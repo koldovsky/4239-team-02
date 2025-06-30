@@ -1,5 +1,4 @@
-function setupCartModalHandlers() {
-	const cartWidgetButton = document.querySelector(".cart-widget__button");
+        const cartWidgetButton = document.querySelector(".cart-widget__button");
 	const cartSection = document.querySelector(".cart");
 	const cartContent = document.querySelector(".cart__content");
 	const cartClose = document.querySelector(".cart__header-close");
@@ -17,5 +16,5 @@ function setupCartModalHandlers() {
 		cartContent.style.display = "none";
 		document.body.style.overflow = "";
 	});
-}
+
 
