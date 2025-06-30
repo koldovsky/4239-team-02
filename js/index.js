@@ -16,8 +16,11 @@ function init() {
 
   // import("./index.order-confirmation.js");
   
-  // Andrii Rybak 
-  import("./global.confirmation-of-age-modal.js");
+  // Andrii Rybak - Block 16
+  import("./global.confirmation-of-age-modal.js")
+  .then(module => {
+      module.initAgeModal();
+    });
 }
 
 

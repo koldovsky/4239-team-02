@@ -1,10 +1,7 @@
-(function initAgeModal() {
-  const isHomePage = window.location.pathname === "/4239-team-02/";
+export function initAgeModal() {
+  //const isHomePage = window.location.pathname === "/" || window.location.pathname.endsWith("4239-team-02/");
 
-  if (!isHomePage) {
-    console.log("Not on homepage, age modal will not show."); 
-    return;
-  }
+  //if (!isHomePage) return;
 
   const ageModal = document.getElementById("ageModal");
   const yesButton = document.querySelector(".age-confirmation__button--yes");
@@ -26,5 +23,5 @@
   noButton.addEventListener("click", () => {
     window.location.href = "access-denied.html";
   });
-})();
+}
 
