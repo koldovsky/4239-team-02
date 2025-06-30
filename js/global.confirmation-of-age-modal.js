@@ -1,5 +1,5 @@
 (function initAgeModal() {
-  const isHomePage = window.location.pathname === "/" || window.location.pathname.endsWith("4239-team-02/");
+  const isHomePage = window.location.pathname === "/4239-team-02/";
 
   if (!isHomePage) return;
 
