@@ -1,4 +1,3 @@
-
 .age-confirmation__overlay {
   position: fixed;
   inset: 0; 
@@ -9,7 +8,6 @@
   z-index: 9999;
   visibility: visible;
   opacity: 1;
-  /* transition: opacity 0.3s ease, visibility 0.3s ease; */
 
   .age-confirmation {
     background-color: var(--color-background-primary);

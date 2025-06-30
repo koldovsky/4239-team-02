@@ -1,0 +1,52 @@
+@import "global.css";
+
+body {
+  background-color: var(--color-background-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 24px;
+
+  .age-denied {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 24px;
+    text-align: center;
+
+    .age-denied__title {
+      font-family: "Prata", serif;
+      font-size: 1.75rem;
+      font-weight: 400;
+      color: var(--color-text-primary);
+      margin-top: 20px;
+
+      @media (min-width: 768px) {
+        font-size: 1.875rem;
+      }
+
+      @media (min-width: 991px) {
+        font-size: 2rem;
+      }
+
+      @media (min-width: 1200px) {
+        font-size: 2.6rem;
+      }
+    }
+
+    .age-denied__image-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 25px;
+    }
+
+    .age-denied__message {
+      font-size: 1rem;
+      line-height: 1.6rem;
+      color: var(--color-text-primary);
+      margin-top: 20px;
+    }
+  }
+}

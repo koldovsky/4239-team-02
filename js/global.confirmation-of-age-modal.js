@@ -1,5 +1,5 @@
 (function initAgeModal() {
-  const isHomePage = window.location.pathname === "/" || window.location.pathname.endsWith("index.html");
+  const isHomePage = window.location.pathname === "/" || window.location.pathname.endsWith("4239-team-02/");
 
   if (!isHomePage) return;
 
@@ -12,7 +12,6 @@
     return;
   }
 
-  // Показуємо вікно одразу
   document.body.classList.add("modal-open");
   ageModal.classList.remove("hidden");
 
@@ -22,7 +21,7 @@
   });
 
   noButton.addEventListener("click", () => {
-    window.location.href = "https://www.google.com";
+    window.location.href = "access-denied.html";
   });
 })();
 
