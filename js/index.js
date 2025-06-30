@@ -15,6 +15,9 @@ function init() {
   import("./index.modal-shopping-cart.js");
 
   // import("./index.order-confirmation.js");
+  
+  // Andrii Rybak 
+  import("./global.confirmation-of-age-modal.js");
 }
 
 

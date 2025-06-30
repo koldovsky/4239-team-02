@@ -106,12 +106,22 @@
                 display: grid;
                 grid-template-columns: 1fr 1fr;
 
+                @media (min-width: 992px) {
+                    grid-template-columns: repeat(3, 1fr); 
+                    grid-template-rows: repeat(2, auto);   
+                }
+
                 img {
                     width: 100%;
                     height: auto;
-                    border: 1px dashed yellowgreen;
+                    /*border: 1px dashed yellowgreen;*/
                     margin-top: 15px;
                     padding: 0 7.5px;
+
+                    @media (min-width: 992px) {
+                        padding: 0;
+                        padding-right: 15px;
+                    }
                 }
             }
         }
