@@ -1,6 +1,6 @@
 .history {
     background-color: var(--color-background-primary);
-    padding: 100px;
+    padding: 150px 300px;
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
     grid-template-rows: minmax(50px, auto);

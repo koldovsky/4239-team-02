@@ -1,77 +1,94 @@
-.age-confirmation {
-  background-color: var(--color-background-primary);
-  padding: 80px 24px;
-  width: 100%;
+.age-confirmation__overlay {
+  position: fixed;
+  inset: 0; 
+  background-color: rgba(0, 0, 0, 0.75); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  visibility: visible;
+  opacity: 1;
 
-  @media (min-width: 480px) {
-    width: 470px;
-  }
-
-  @media (min-width: 768px) {
-    width: 670px;
-  }
-
-  @media (min-width: 1201px) {
-    width: 700px;
-  }
-
-  .age-confirmation__title {
-    font-family: "Prata", serif;
-    font-weight: 400;
-    font-size: 2.125rem;
-    color: var(--color-text-primary);
-    text-align: center;
-  }
-
-  .age-confirmation__image-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 25px;
-  }
-
-  .age-confirmation__message {
-    font-size: 1rem;
-    color: var(--color-text-primary);
-    text-align: center;
-    line-height: 1.6rem;
-    margin-top: 20px;
-  }
-
-  .age-confirmation__buttons {
-    margin-top: 45px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-
-    .age-confirmation__button {
-      font-size: 0.93rem;
-      font-weight: bold;
+  .age-confirmation {
+    background-color: var(--color-background-primary);
+    padding: 80px 24px;
+    width: 100%;
+  
+    @media (min-width: 480px) {
+      width: 470px;
+    }
+  
+    @media (min-width: 768px) {
+      width: 670px;
+    }
+  
+    @media (min-width: 1201px) {
+      width: 700px;
+    }
+  
+    .age-confirmation__title {
+      font-family: "Prata", serif;
+      font-weight: 400;
+      font-size: 2.125rem;
       color: var(--color-text-primary);
-      border-radius: 2px;
-      padding: 16px 0px;
-      border-radius: 2px;
-      box-shadow: none;
-      cursor: pointer;
       text-align: center;
     }
-
-    .age-confirmation__button--yes {
-      background-color: var(--color-accent);
-      width: 135px;
-      height: 47px;
-      border-color: var(--color-accent);
-      border: none;
+  
+    .age-confirmation__image-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 25px;
     }
-
-    .age-confirmation__button--no {
-      border-color: var(--color-text-primary);
-      background-color: transparent;
-      width: 167px;
-      height: 47px;
+  
+    .age-confirmation__message {
+      font-size: 1rem;
+      color: var(--color-text-primary);
+      text-align: center;
+      line-height: 1.6rem;
+      margin-top: 20px;
+    }
+  
+    .age-confirmation__buttons {
+      margin-top: 45px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+  
+      .age-confirmation__button {
+        font-size: 0.93rem;
+        font-weight: bold;
+        color: var(--color-text-primary);
+        border-radius: 2px;
+        padding: 16px 0px;
+        border-radius: 2px;
+        box-shadow: none;
+        cursor: pointer;
+        text-align: center;
+      }
+  
+      .age-confirmation__button--yes {
+        background-color: var(--color-accent);
+        width: 135px;
+        height: 47px;
+        border-color: var(--color-accent);
+        border: none;
+      }
+  
+      .age-confirmation__button--no {
+        border-color: var(--color-text-primary);
+        background-color: transparent;
+        width: 167px;
+        height: 47px;
+      }
     }
   }
+}
+
+.age-confirmation__overlay.hidden {
+  opacity: 0;
+  visibility: hidden;
 }

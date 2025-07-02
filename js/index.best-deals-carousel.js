@@ -6,6 +6,8 @@ const dotsContainer = document.querySelector('.best-deals__dots');
 let slides = Array.from(track.children);
 let currentIndex = 0;
 let dotElements = [];
+let isAnimating = false;
+const animationDuration = 500;
 
 function getVisibleCount() {
   const width = window.innerWidth;
@@ -45,9 +47,13 @@ function setInitialPosition() {
 }
 
 function moveToSlide() {
+  if (isAnimating) return;
+
   const slideWidth = slides[0].getBoundingClientRect().width;
-  track.style.transition = 'transform 0.5s ease-in-out';
+  track.style.transition = `transform ${animationDuration}ms ease-in-out`;
   track.style.transform = `translateX(-${slideWidth * currentIndex}px)`;
+  isAnimating = true;
+
   updateDots();
 }
 
@@ -68,14 +74,18 @@ track.addEventListener('transitionend', () => {
     track.style.transform = `translateX(-${slideWidth * currentIndex}px)`;
     updateDots();
   }
+
+  isAnimating = false;
 });
 
 nextButton.addEventListener('click', () => {
+  if (isAnimating) return;
   currentIndex++;
   moveToSlide();
 });
 
 prevButton.addEventListener('click', () => {
+  if (isAnimating) return;
   currentIndex--;
   moveToSlide();
 });
@@ -95,6 +105,7 @@ function createDots() {
     dotElements.push(dot);
 
     dot.addEventListener('click', () => {
+      if (isAnimating) return;
       currentIndex = parseInt(dot.dataset.index) + visible;
       moveToSlide();
     });
