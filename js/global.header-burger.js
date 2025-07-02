@@ -1,6 +1,6 @@
 const burger = document.querySelector(".header__burger");
 const nav = document.querySelector(".header-nav__panel-mobile");
-const menuLinks = document.querySelectorAll(".header__menu-link");
+const menuLinks = document.querySelectorAll(".header-nav__menu-link-mobile");
 const header = document.querySelector(".header");
 
 function toggleMenu() {

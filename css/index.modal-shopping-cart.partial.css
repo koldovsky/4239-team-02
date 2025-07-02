@@ -4,14 +4,9 @@
 	font-size: 16px;
 	line-height: 1.6;
 	font-weight: 400;
-	position: relative;
 	margin: 10% auto calc(10% + 80px);
 	width: 100%;
-	/* for modal */
-	display: none;
-	/* приховано за замовчуванням */
 	position: fixed;
-	/* height: 100vh; */
 	top: 0;
 	right: 0;
 	bottom: 0;
@@ -19,7 +14,6 @@
 	justify-content: center;
 	align-items: center;
 	z-index: 1001;
-	display: block;
 	overflow-y: scroll;
 
 	@media (min-width: 768px) {
@@ -29,11 +23,6 @@
 
 	.cart__content {
 		background: var(--color-text-primary);
-		position: relative;
-	}
-
-	.cart--active {
-		display: flex;
 	}
 
 	.cart__header {
@@ -149,25 +138,30 @@
 		row-gap: 8px;
 
 		.cart__promo-link {
-			color: inherit;
+			transition: 0.4s;
+			position: relative;
+			font-size: 16px;
+			line-height: 1.6;
+			text-decoration: underline;
+			border: none;
+			cursor: pointer;
+			background-color: var(--color-text-primary);
 		}
 
 		.cart__promo-form {
-			display: flex;
+			display: none;
 			position: relative;
 			column-gap: 8px;
 			margin-top: 8px;
 			align-items: flex-end;
 			justify-content: space-around;
 		}
-
-		.cart__promo span {
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-		}
 	}
-
+	.cart__promocode {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
 	.cart__button {
 		height: 36px;
 		padding: 0 16px;
@@ -260,9 +254,17 @@
 	}
 
 	.cart__empty {
-		display: flex;
+		display: none;
+		/* display: flex; */
 		padding: 56px 0;
 		flex-direction: column;
 		align-items: center;
 	}
+}
+.cart {
+	display: none;
+}
+
+.cart--active {
+	display: flex;
 }

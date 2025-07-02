@@ -99,6 +99,7 @@
   }
 }
 
+.header-nav__menu-link-mobile,
 .header-nav__menu-link,
 .header-nav__social-link {
   color: var(--color-text-primary);
@@ -106,6 +107,7 @@
   font-weight: 500;
 }
 
+.header-nav__menu-link-mobile:hover,
 .header-nav__menu-link:hover {
   color: var(--color-accent);
 }
@@ -185,6 +187,16 @@
   opacity: 1;
 }
 
+.is-open{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--color-newsletter-background);
+  z-index: 100;
+}
+
 .header__burger.is-active .header__burger-line:nth-child(1) {
   transform: translateY(0) rotate(45deg);
 }
@@ -231,6 +243,7 @@
     width: 100%;
   }
 
+  .header-nav__menu-link-mobile,
   .header-nav__menu-link,
   .header-nav__social-link {
     font-size: 0.875rem;

@@ -1,20 +1,20 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const openModalBtn = document.getElementById("open-cart");
-    const closeModalBtn = document.getElementById("close-cart");
-    const modal = document.getElementById("cart");
+        const cartWidgetButton = document.querySelector(".cart-widget__button");
+	const cartSection = document.querySelector(".cart");
+	const cartContent = document.querySelector(".cart__content");
+	const cartClose = document.querySelector(".cart__header-close");
 
-    openModalBtn.addEventListener("click", () => {
-        modal.classList.add("cart--active");
-    });
+	// Open
+	cartWidgetButton.addEventListener("click", function () {
+		cartSection.classList.add("cart--active");
+		cartContent.style.display = "block";
+		document.body.style.overflow = "hidden";
+	});
 
-    closeModalBtn.addEventListener("click", () => {
-        modal.classList.remove("cart--active");
-    });
+	// Close
+	cartClose.addEventListener("click", function () {
+		cartSection.classList.remove("cart--active");
+		cartContent.style.display = "none";
+		document.body.style.overflow = "";
+	});
 
-    modal.addEventListener("click", (e) => {
-        if (!modal.querySelector(".cart__content").contains(e.target)) {
-            modal.classList.remove("cart--active");
-        }
-    });
-});
 
