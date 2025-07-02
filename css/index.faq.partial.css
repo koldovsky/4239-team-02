@@ -92,9 +92,9 @@
   position: absolute;
   right: 20px;
   font-size: 24px;
-  top: 50%;
-  transform: translateY(50%);
-  transition: transform 1.0s ease;
+  top: 10%;
+  transform: translateY(20%);
+  transition: transform 0.3s ease;
 }
 
 .faq__item--active .faq__question::after {
