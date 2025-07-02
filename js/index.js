@@ -4,6 +4,9 @@ function init() {
 
   // Anna Snitko - Block 4
   import("./index.best-deals-carousel.js");
+
+  // Vladyslav Savchuk - Block 11
+  import("./index.testimonials-carousel.js");
 }
 
 const totalPartials = document.querySelectorAll(

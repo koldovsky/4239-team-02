@@ -34,8 +34,46 @@
   text-align: center;
 }
 
+.testimonials__carousel {
+    position: relative;
+    width: 90%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.testimonials__carousel {
+  display: flex;
+  justify-content: center;
+}
+
 .testimonials__feedback-quote {
   font-size: 16px;
   color: var(--color-text-secondary);
   font-family: var(--font-rubik);
+}
+
+.testimonials__arrow {
+    position: absolute;
+    display: block;
+    top: 50%;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--color-text-primary);
+    color: var(--color-input-background);
+    border: none;
+    font-size: 10px;
+    cursor: pointer;
+    z-index: 1;
+    transition: background 0.3s;
+    padding: 7px;
+}
+
+.testimonials__arrow--left {
+    left: 0;
+    transform: scaleX(-1);
+}
+
+.testimonials__arrow--right {
+    right: 10px;
 }
