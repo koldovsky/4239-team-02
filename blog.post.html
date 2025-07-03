@@ -26,6 +26,7 @@
     </header>
 
     <div
+      id="blog-post-container"
       data-hx-trigger="load"
       data-hx-swap="outerHTML"
       data-hx-get="blog.post-detail.partial.html"
@@ -36,5 +37,15 @@
       data-hx-swap="outerHTML"
       data-hx-get="global.footer.partial.html"
     ></footer>
+    <script>
+      document.body.addEventListener("htmx:afterSwap", (e) => {
+        if (e.detail.target.id === "blog-post-container") {
+          const script = document.createElement("script");
+          script.type = "module";
+          script.src = "js/blog-post.js";
+          document.body.appendChild(script);
+        }
+      });
+    </script>
   </body>
 </html>
