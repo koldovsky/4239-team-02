@@ -1,7 +1,5 @@
 const postSlug = new URLSearchParams(window.location.search).get("post");
 
-console.log("POST SLUG =", postSlug); // DEBUG
-
 import(`../data/blog-post-${postSlug}.js`).then((module) => {
   const data = module.default;
 
