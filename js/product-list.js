@@ -1,17 +1,17 @@
-import { Cart } from "./cart.js";
-import { ProductsService } from "./products-service.js";
-import { showAlert } from "./alert.js";
+import { Cart } from './cart.js';
+import { ProductsService } from './products-service.js';
+import { showAlert } from './alert.js';
 
 export class ProductList {
     constructor() {
-        this.container = document.querySelector(".products-container");
+        this.container = document.querySelector('.products-container');
         this.productsService = new ProductsService();
         this.renderProducts();
     }
     async renderProducts() {
-        let productListHtml = "";
+        let productListHtml = '';
         const products = await this.productsService.getProducts();
-        products.forEach((product) => {
+        products.forEach(product => {
             productListHtml += this.createProductHtml(product);
         });
         this.container.innerHTML = productListHtml;
@@ -29,28 +29,28 @@ export class ProductList {
         </article>`;
     }
     addEventListeners() {
-        document.querySelectorAll(".btn-info").forEach((btn) => {
-            btn.addEventListener("click", this.showProductInfo.bind(this));
+        document.querySelectorAll('.btn-info').forEach(btn => {
+            btn.addEventListener('click', this.showProductInfo.bind(this));
         });
-        document.querySelectorAll(".btn-buy").forEach((btn) => {
-            btn.addEventListener("click", this.addProductToCart.bind(this));
+        document.querySelectorAll('.btn-buy').forEach(btn => {
+            btn.addEventListener('click', this.addProductToCart.bind(this));
         });
     }
     async showProductInfo(event) {
         const id = event.target.dataset.id;
         const product = await this.productsService.getProductById(id);
-        const modal = document.querySelector("#product-info-modal");
-        modal.querySelector(".modal-title").innerHTML = product.title;
-        modal.querySelector(".product-image").src = `img/${product.image}`;
-        modal.querySelector(".product-description").innerHTML = product.description;
-        modal.querySelector(".product-price").innerHTML = product.price;
-        modal.querySelector(".btn-buy").dataset.id = product.id;
+        const modal = document.querySelector('#product-info-modal');
+        modal.querySelector('.modal-title').innerHTML = product.title;
+        modal.querySelector('.product-image').src = `img/${product.image}`;
+        modal.querySelector('.product-description').innerHTML = product.description;
+        modal.querySelector('.product-price').innerHTML = product.price;
+        modal.querySelector('.btn-buy').dataset.id = product.id;
     }
     addProductToCart(event) {
         const id = event.target.dataset.id;
         const cart = new Cart();
         cart.addProduct(id);
-        showAlert("Added to cart!");
+        showAlert('Added to cart!');
     }
 }
 new ProductList();

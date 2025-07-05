@@ -7,21 +7,26 @@ function init() {
 
   // Vladyslav Savchuk - Block 11
   import("./index.testimonials-carousel.js");
-  
+
   // Ryzhlov Oleksandr - Block 13
   import("./index.faq.partial.js");
 
   // Iryna Zhmailo - Block 17 + order-confirmation block
 
-  // import("./index.modal-cart-widget.js");
+  import("./alert.js");
+  import("./products-service.js");
+  import("./cart.js");
+  import("./product-list.js");
+
+  import("./index.modal-cart-widget.js");
 
   import("./index.modal-shopping-cart.js");
 
-  // import("./index.order-confirmation.js");
-  
+  import("./index.order-confirmation.js");
+
   // Andrii Rybak - Block 16
   import("./global.confirmation-of-age-modal.js")
-  .then(module => {
+    .then(module => {
       module.initAgeModal();
     });
 }
