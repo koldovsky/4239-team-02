@@ -1,5 +1,4 @@
 import { ProductsService } from "./products-service.js";
-import { showAlert } from "./alert.js";
 
 function debounce(func, wait = 300) {
 	let timeout;
@@ -15,11 +14,11 @@ export class Cart {
 	constructor() {
 		if (Cart.#instance) return Cart.#instance;
 		Cart.#instance = this;
-		//
-		console.log("Cart initialized");
+
 		this.container = document.querySelector(".cart__product");
 		this.productsService = new ProductsService();
 		this.cart = JSON.parse(localStorage.getItem("cart") ?? "{}");
+
 		this.addEventListeners();
 		this.renderCart();
 	}
@@ -45,35 +44,17 @@ export class Cart {
 			cartHtml += this.createCartHtml(product);
 		}
 
-		// if (!cartHtml) {
-		// 	cartHtml = "<p>Your cart is empty.</p>";
-		// } else {
-		// 	cartHtml += `
-		//   <div class="row">
-		//     <div class="col-5"><strong>TOTAL</strong></div>
-		//     <div class="col-3"><strong>${total.toFixed(2)} USD</strong></div>
-		//   </div>`;
-		// }
 		if (!cartHtml) {
 			cartHtml = "<p>Your cart is empty.</p>";
 		} else {
-			cartHtml += `<div class="cart__product-price">
-							<p>${total.toFixed(2)} USD</p>
-						</div>`;
+			cartHtml += `<div class="cart__total">
+			<p>Total: ${total.toFixed(2)} USD</p>
+		</div>`;
 		}
 
 		this.container.innerHTML = cartHtml;
+		this.updateCartBadge(qtySum);
 
-		this.container
-			.querySelectorAll(".plus")
-			.forEach((el) =>
-				el.addEventListener("click", (ev) => this.changeQuantity(ev, this.addProductOperation))
-			);
-		this.container
-			.querySelectorAll(".minus")
-			.forEach((el) =>
-				el.addEventListener("click", (ev) => this.changeQuantity(ev, this.deleteProductOperation))
-			);
 		this.container.querySelectorAll(".cart__product-qty-input").forEach((input) =>
 			input.addEventListener(
 				"input",
@@ -81,44 +62,51 @@ export class Cart {
 			)
 		);
 
-		document.querySelector(".cart-widget__count-number").textContent = qtySum;
+		this.container.querySelectorAll(".cart__product-remove").forEach((btn) =>
+			btn.addEventListener("click", (ev) => {
+				const id = ev.target.dataset.id;
+				delete this.cart[id];
+				this.saveCart();
+				this.renderCart();
+			})
+		);
 	}
 
 	createCartHtml(product) {
 		return `<div class="cart__product" data-id="${product.id}">
-      <div class="cart__product-image">
-        <img src="img/${product.image}" alt="${product.title}" width="46" height="46" />
-      </div>
-      <div class="cart__product-info">
-        <div class="cart__product-name">
-          <a href="#" target="_blank" class="cart__product-link">${product.title}</a>
-        </div>
-        <span>
-          <div class="product-price cart__product-price">
-            <p>${product.price.toFixed(2)} USD</p>
-          </div>
-          <div class="cart__product-quantity">
-           
-            <input
-              type="number"
-              value="${this.cart[product.id]}"
-              min="1"
-              data-id="${product.id}"
-              class="cart__product-qty-input"
-            />
-           
-          </div>
-        </span>
-      </div>
-    </div>`;
-	}
-
-	changeQuantity(ev, operation) {
-		ev.stopPropagation();
-		const id = ev.target.dataset.id;
-		operation.call(this, id);
-		this.saveCart();
-		this.renderCart();
+			<div class="cart__product-image">
+				<img src="img/${product.image}" alt="${product.title}" width="46" height="46" />
+			</div>
+			<div class="cart__product-info">
+				<div class="cart__product-name">
+					<a href="#" target="_blank" class="cart__product-link">${product.title}</a>
+				</div>
+				<span>
+					<div class="product-price cart__product-price">
+						<p>${product.price.toFixed(2)} USD</p>
+					</div>
+					<div class="cart__product-quantity">
+						<input
+							type="number"
+							value="${this.cart[product.id]}"
+							min="1"
+							data-id="${product.id}"
+							class="cart__product-qty-input"
+						/>
+					</div>
+<button class="cart__product-remove" data-id="${product.id}" aria-label="Remove product">
+					<svg width="14" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							fill-rule="evenodd"
+							clip-rule="evenodd"
+							d="M10 2h3.6c.2 0 .4.2.4.4v1.2c0 .2-.2.4-.4.4H.4C.2 4 0 3.9 0 3.6V2.4c0-.2.2-.4.4-.3h3.7V2L4.9.3c.1-.2.2-.3.4-.3h3.5c.1 0 .3.1.4.2l.8 1.7V2zM1.8 16.1c.1 1 1 1.9 2 1.9h6.3c1.1 0 1.9-.8 2-1.9l1-11.1H1l.8 11.1zM12 6l-.8 10.1c0 .5-.5.9-1 .9H3.8c-.5 0-1-.4-1-.9L2 6h10zM5 8.1h1v6H5v-6zm4 0H8v6h1v-6z"
+							fill="#9199AB"
+						></path>
+					</svg>
+				</button>
+				</span>
+			</div>
+		</div>`;
 	}
 
 	handleManualQtyInput(ev) {
@@ -134,34 +122,42 @@ export class Cart {
 		this.renderCart();
 	}
 
-	addProductOperation(id) {
-		this.cart[id] = (this.cart[id] || 0) + 1;
-	}
-
-	deleteProductOperation(id) {
-		if (this.cart[id] > 1) {
-			this.cart[id] -= 1;
-		} else {
-			delete this.cart[id];
-		}
-	}
-
 	addProduct(id) {
-		this.addProductOperation(id);
+		this.cart[id] = (this.cart[id] || 0) + 1;
 		this.saveCart();
 		this.renderCart();
+		this.flashCartIcon();
 	}
 
 	saveCart() {
 		localStorage.setItem("cart", JSON.stringify(this.cart));
 	}
 
+	updateCartBadge(qtySum) {
+		const badge = document.querySelector(".cart-widget__count-number");
+		if (badge) {
+			badge.textContent = qtySum;
+			if (qtySum > 0) {
+				badge.classList.add("active-cart");
+			} else {
+				badge.classList.remove("active-cart");
+			}
+		}
+	}
+
+	flashCartIcon() {
+		const icon = document.querySelector(".cart-widget__icon");
+		if (icon) {
+			icon.classList.add("active");
+			setTimeout(() => icon.classList.remove("active"), 3000);
+		}
+	}
+
 	async order(ev) {
-		if (Object.keys(this.cart).length === 0)
-			return showAlert("Please choose products to order", false);
+		if (Object.keys(this.cart).length === 0) return;
 
 		const form = document.querySelector(".cart__form");
-		if (!form.checkValidity()) return showAlert("Please fill form correctly", false);
+		if (!form.checkValidity()) return;
 
 		ev.preventDefault();
 
@@ -181,21 +177,6 @@ export class Cart {
 			this.cart = {};
 			this.saveCart();
 			this.renderCart();
-			showAlert("Thank you!");
-			document.querySelector("#modal-cart .close-btn")?.click();
-		} else {
-			showAlert("There was an error placing your order.", false);
-		}
-		// Дякую за замовлення
-		if (response.ok) {
-			form.reset();
-			this.cart = {};
-			this.saveCart();
-			this.renderCart();
-			showAlert("Thank you!");
-			document.querySelector("#modal-cart .close-btn")?.click();
-
-			// Перехід після підтвердження:
 			window.open("https://koldovsky.github.io/4239-team-02/order-confirmation.html", "_blank");
 		}
 	}
