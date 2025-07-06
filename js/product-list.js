@@ -3,7 +3,7 @@ import { ProductsService } from "./products-service.js";
 
 export class ProductList {
 	constructor() {
-		this.container = document.querySelector(".cart__product");
+		this.container = document.querySelector(".cart__products");
 		this.productsService = new ProductsService();
 		this.renderProducts();
 	}
