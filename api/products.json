@@ -3,48 +3,56 @@
 		"id": "1",
 		"title": "Cabernet",
 		"image": "best-deals-carousel/products-carousel-cabernet.jpg",
+		"alt": "Cabernet bottle",
 		"price": 17.0
 	},
 	{
 		"id": "2",
 		"title": "Sauvignon Blanc",
 		"image": "best-deals-carousel/products-carousel-sauvignon-blanc.jpg",
+		"alt": "Sauvignon Blanc bottle",
 		"price": 12.0
 	},
 	{
 		"id": "3",
 		"title": "Syrah",
 		"image": "best-deals-carousel/products-carousel-syrah.jpg",
+		"alt": "Syrah bottle",
 		"price": 13.0
 	},
 	{
 		"id": "4",
 		"title": "Pinot Grigio",
-		"image": "products-carousel-pinot-grigio.jpg",
+		"image": "craft-wines/products-carousel-pinot-grigio.jpg",
+		"alt": "Pinot grigio bottle",
 		"price": 17.0
 	},
 	{
 		"id": "5",
 		"title": "Pinot Noir",
 		"image": "craft-wines/pinotnoir.jpeg",
+		"alt": "bottle of pinotnoir wine",
 		"price": 12.0
 	},
 	{
 		"id": "6",
 		"title": "Riesling",
 		"image": "craft-wines/riesling.jpeg",
+		"alt": "bottle of riesling wine",
 		"price": 16.0
 	},
 	{
 		"id": "7",
 		"title": "Zafandel",
 		"image": "craft-wines/zifandel.jpeg",
+		"alt": "bottle of zafandel wine",
 		"price": 14.0
 	},
 	{
 		"id": "8",
 		"title": "Soave",
 		"image": "craft-wines/soave.jpeg",
+		"alt": "bottle of soave wine",
 		"price": 12.0
 	}
 ]

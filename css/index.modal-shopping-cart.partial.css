@@ -20,7 +20,6 @@
 		width: 100vw;
 		overflow-y: scroll;
 		background: var(--color-text-primary);
-
 		@media (min-width: 768px) {
 			width: 470px;
 		}
@@ -158,13 +157,11 @@
 			justify-content: space-around;
 		}
 	}
-
 	.cart__promocode {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 	}
-
 	.cart__button {
 		height: 36px;
 		padding: 0 16px;
@@ -245,7 +242,8 @@
 			text-decoration: none;
 		}
 
-		.cart__form-button {
+		.cart__form-button,
+		.cart__order-button {
 			font-weight: normal;
 			font-size: calc(15px * 1.1);
 			border-radius: 2px;
@@ -264,7 +262,6 @@
 		align-items: center;
 	}
 }
-
 .cart {
 	display: none;
 }

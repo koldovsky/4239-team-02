@@ -13,16 +13,16 @@ function init() {
 
   // Iryna Zhmailo - Block 17 + order-confirmation block
 
-  import("./alert.js");
+  // import("./alert.js");
   import("./products-service.js");
   import("./cart.js");
   import("./product-list.js");
 
-  import("./index.modal-cart-widget.js");
+  // import("./index.modal-cart-widget.js");
 
   import("./index.modal-shopping-cart.js");
 
-  import("./index.order-confirmation.js");
+  // import("./index.order-confirmation.js");
 
   // Andrii Rybak - Block 16
   import("./global.confirmation-of-age-modal.js")
