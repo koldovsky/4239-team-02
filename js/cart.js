@@ -15,7 +15,7 @@ export class Cart {
 		if (Cart.#instance) return Cart.#instance;
 		Cart.#instance = this;
 
-		this.container = document.querySelector(".cart__product");
+		this.container = document.querySelector(".cart__products");
 		this.productsService = new ProductsService();
 		this.cart = JSON.parse(localStorage.getItem("cart") ?? "{}");
 
