@@ -80,6 +80,9 @@
 		align-items: center;
 
 		.cart__product-remove {
+			cursor: pointer;
+			padding-top: 7px;
+			padding-bottom: 7px;
 			border: none;
 			background-color: var(--color-text-primary);
 		}
