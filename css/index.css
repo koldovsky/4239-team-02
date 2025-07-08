@@ -51,3 +51,6 @@
 @import "index.modal-cart-widget.partial.css";
 @import "index.modal-shopping-cart.partial.css";
 
+body.modal-open {
+    overflow: hidden !important; 
+}
