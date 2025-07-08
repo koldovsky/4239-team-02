@@ -1,5 +1,7 @@
 @import "global.css";
-@import "global.about-wine.css";
+@import "global.nav.css";
+@import "about-wine.redefinition-styles.css";
+@import "about-wine.section.css";
 @import "about-wine.header.css";
 @import "about-wine.slider.css";
 @import "about-wine.slider.footer.css";

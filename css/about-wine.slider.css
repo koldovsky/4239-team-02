@@ -25,6 +25,7 @@
 
     .abw-slider-button {
       position: absolute;
+      z-index: -1;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -43,7 +44,7 @@
       left: 2%;
 
       @media (min-width: 768px) {
-        left: -20%;
+        left: -8%;
         opacity: 0;
       }
     }
@@ -52,7 +53,7 @@
       right: 2%;
 
       @media (min-width: 768px) {
-        right: -20%;
+        right: -8%;
         opacity: 0;
       }
     }
@@ -71,3 +72,5 @@
     }
   }
 }
+
+
