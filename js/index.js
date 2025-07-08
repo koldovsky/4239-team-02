@@ -11,19 +11,23 @@ function init() {
   // Ryzhlov Oleksandr - Block 13
   import("./index.faq.partial.js");
 
-  // Iryna Zhmailo - Block 17 + order-confirmation block
-
-  // import("./index.modal-cart-widget.js");
+  // Iryna Zhmailo - Block 17 
+  import("./products-service.js");
+  import("./cart.js");
+  import("./product-list.js");
 
   import("./index.modal-shopping-cart.js");
 
   // import("./index.order-confirmation.js");
 
+
   // Andrii Rybak - Block 16
-  import("./global.confirmation-of-age-modal.js").then((module) => {
-    module.initAgeModal();
-  });
+  import("./global.confirmation-of-age-modal.js")
+    .then(module => {
+      module.initAgeModal();
+    });
 }
+
 
 const totalPartials = document.querySelectorAll(
   '[hx-trigger="load"], [data-hx-trigger="load"]'
