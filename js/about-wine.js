@@ -1,6 +1,24 @@
+import { Slider } from "./about-wind.slider.js";
+import { QuantityWine } from "./about-wine.counter.js";
+
 function initAll() {
-  // import("./burger.js").then(m => m.initBurger());
-  import("./about-wine.counter.js").then(m => new m.QuantityWine('#quantity-wine'))
+
+  import("./about-wine.data-service.js").then(({ DataService }) => {
+    const dataService = new DataService("api/products.json");
+    // actual slider
+    import("./about-wind.slider.js").then(({Slider}) => {
+      new Slider(".abw-slider", dataService)
+    })
+    // info about product
+    import("./about-wine.info.js").then(({ Info }) => {
+      new Info('.info', dataService)
+    })
+    
+    // quantity wien...
+    import("./about-wine.counter.js").then(({ QuantityWine }) => {
+      new QuantityWine("#quantity-wine")
+    });
+  });
 }
 
 const totalPartials = document.querySelectorAll(
@@ -13,7 +31,6 @@ document.body.addEventListener("htmx:afterOnLoad", () => {
   loadedCount++;
   if (loadedCount === totalPartials) initAll();
 });
-
 
 // const input = document.querySelector('.quantity__wine')
 // const title = document.querySelector('.info__title')

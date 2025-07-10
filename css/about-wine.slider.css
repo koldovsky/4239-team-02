@@ -25,10 +25,6 @@
 
     .abw-slider-button {
       position: absolute;
-      z-index: -1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       top: 50%;
       transform: translateY(-50%);
       width: 40px;
@@ -41,19 +37,21 @@
     }
 
     .abw-slider-button--prev {
+      background: url('../img/global/arrow-preview.svg') center no-repeat;
       left: 2%;
 
       @media (min-width: 768px) {
-        left: -8%;
+        left: -4%;
         opacity: 0;
       }
     }
 
     .abw-slider-button--next {
       right: 2%;
+      background: url('../img/global/arrow-next.svg') center no-repeat;
 
       @media (min-width: 768px) {
-        right: -8%;
+        right: -4%;
         opacity: 0;
       }
     }

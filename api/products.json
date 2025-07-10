@@ -4,55 +4,63 @@
 		"title": "Cabernet",
 		"image": "best-deals-carousel/products-carousel-cabernet.jpg",
 		"alt": "Cabernet bottle",
-		"price": 17.0
+		"price": 17.0,
+		"description": "If you don't want which red wine to buy, think of this Cabernet. It has a very deep dark purple color and opens with boysenberry, bourbon, and vanilla aromas. Then you'll feel brown sugar, cocoa, spices, and currants. It's a wine with a really rich taste."
 	},
 	{
 		"id": "2",
 		"title": "Sauvignon Blanc",
 		"image": "best-deals-carousel/products-carousel-sauvignon-blanc.jpg",
 		"alt": "Sauvignon Blanc bottle",
-		"price": 12.0
+		"price": 12.0,
+		"description": "Light yet unique in character, this Sauvignon Blanc by CaliWines is filled with aromas of apple, grapefruit, gooseberry, and guava. This wine is light bodied with a fresh finish and a light yellow color."
 	},
 	{
 		"id": "3",
 		"title": "Syrah",
 		"image": "best-deals-carousel/products-carousel-syrah.jpg",
 		"alt": "Syrah bottle",
-		"price": 13.0
+		"price": 13.0,
+		"description": "This intense wine has aromas of violets, red fruit, cherry, blackberry, and vanilla. It also features rich flavors of blackberry, black cherry, plum, and vanilla with silky tannins and a rich finish."
 	},
 	{
 		"id": "4",
 		"title": "Pinot Grigio",
-		"image": "craft-wines/products-carousel-pinot-grigio.jpg",
+		"image": "best-deals-carousel/products-carousel-pinot-grigio.jpg",
 		"alt": "Pinot grigio bottle",
-		"price": 17.0
+		"price": 17.0,
+		"description": "Bright golden color. Gentle aromas and flavors of peach cobbler, honeydew, and apple with a silky, fruity-yet-dry medium body, and lemon and nut in the finish."
 	},
 	{
 		"id": "5",
 		"title": "Pinot Noir",
 		"image": "craft-wines/pinotnoir.jpeg",
 		"alt": "bottle of pinotnoir wine",
-		"price": 12.0
+		"price": 12.0,
+		"description": "It is one of the lightest red wines. Pinot Noir is easy to drink, it won't punch you in the face like some reds can and is perfect for romantic evenings and meetings with friends. Our Pinot Noir has a \"light body\" and feels silky to the tongue. You might taste bright berries like raspberry and cranberry."
 	},
 	{
 		"id": "6",
 		"title": "Riesling",
 		"image": "craft-wines/riesling.jpeg",
 		"alt": "bottle of riesling wine",
-		"price": 16.0
+		"price": 16.0,
+		"description": "Dazzling silver-gold in color, with intense mineral aromas of shale, gravel, and limestone, combined with notes of white flower, green apple, peach, and lemon oil. You can smell the flavors of fresh apricot, lime, and grapefruit pith."
 	},
 	{
 		"id": "7",
 		"title": "Zafandel",
 		"image": "craft-wines/zifandel.jpeg",
 		"alt": "bottle of zafandel wine",
-		"price": 14.0
+		"price": 14.0,
+		"description": "This wine is produced from more ripened berries than usual. Core flavors are rich, with jammy blackberries and mocha. You can pair this wine with braised ribs, chicken enchiladas, or dark chocolate."
 	},
 	{
 		"id": "8",
 		"title": "Soave",
 		"image": "craft-wines/soave.jpeg",
 		"alt": "bottle of soave wine",
-		"price": 12.0
+		"price": 12.0,
+		"description": "Our Californian tribute to Italian wine varieties. \n\nLight straw color. Delicate and gentle aroma of sweet field flowers: camomile, elder, and iris. Minced palate with almond aftertaste. Pairs with steamed fish, fresh cheese, and mussels."
 	}
 ]
